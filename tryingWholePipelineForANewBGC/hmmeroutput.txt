@@ -1,0 +1,1914 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             hmmerinput.fasta
+# target HMM database:             Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       BGC0001720  [L=970]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    1.7e-28  100.0   0.2    1.2e-14   54.6   0.0    3.2  3  Enterotoxin_a  Heat-labile enterotoxin alpha chain
+  ------ inclusion threshold ------
+       0.23   11.9   0.3        0.5   10.8   0.3    1.5  1  CM_1           Chorismate mutase type I
+
+
+Domain annotation for each model (and alignments):
+>> Enterotoxin_a  Heat-labile enterotoxin alpha chain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   54.6   0.0   1.3e-18   1.2e-14      21     147 ..     104     224 ..      96     239 .. 0.86
+   2 !   38.7   0.1   9.2e-14   8.3e-10     146     219 ..     253     325 ..     249     334 .. 0.85
+   3 ?    2.5   0.0      0.01        92     110     164 ..     562     616 ..     555     626 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 54.6 bits;  conditional E-value: 1.3e-18
+                    EEEESS-HHHHHHHTEE--TTHHCCC.CCSSGSB--HHHHHHSSTSSSSSTTTTEEEEBSSHHHHHHHHHHHSTT-SEEEEEEEE--TTEEEHHHH CS
+  Enterotoxin_a  21 yradsrtPdevkrsgGllprGqseay.ergtplninlldhargtvtgnvryddGYvstftslreAhllgqsilsgykeyYiYvvAtapNlvdVngv 115
+                    yr ++r P  +  ++G++pr  + a   ++ +    ++ h+   +  +      Yvst++    A   g+      +++Y+YvvA+ p +++V + 
+     BGC0001720 104 YRGETRDPTVIEAAKGFFPRDPERALtAEEAEAGSGIYSHVAEKIVKD---YTKYVSTSMDPGAASDFGK------STGYVYVVAPDPKMINVPET 190
+                    99******************9998862578899999999988776555...456*****99888866554......589***************** PP
+
+                    HGGG-SS..GGG-EEEEET-EEGGGEEEEEEEET CS
+  Enterotoxin_a 116 LGsyspa..pseaEvaAlggipysqvyGWyrvsf 147
+                    LG++ pa   +e+E+ A+g+ip+ qv+GW + s 
+     BGC0001720 191 LGEFMPAqfAKENELIAVGQIPFEQVRGWIKKST 224
+                    ***98873369******************99775 PP
+
+  == domain 2  score: 38.7 bits;  conditional E-value: 9.2e-14
+                    ETTEEESCEEE-TT--HHHHCT---B-HHHCHCC----TTSGGGGSTTGGGC--CCCTTSTT----HH.HHHHHH CS
+  Enterotoxin_a 146 sfgviegklerNrdyrrdlfrnltiapaedGyelAgFppddpaWreepwrefaPegceaktrkrsnet.calkqa 219
+                    + g i + +  N++y+   ++ ++++++++  elAgFp+d paW+ epw+++  ++ +++  ++ ne+ c++++a
+     BGC0001720 253 KIGNIANAYTPNKKYDAAKYDKTRASGGRP--ELAGFPKDSPAWKKEPWKQYQNKKVSESLTEFLNEVvCDKVEA 325
+                    57899999**********************..********************98999888888888752555444 PP
+
+  == domain 3  score: 2.5 bits;  conditional E-value: 0.01
+                    EEHHHHHGGG-SSGGG-EEEEET-EEGGGEEEEEEEETTEEESCEEE-TT--HHH CS
+  Enterotoxin_a 110 vdVngvLGsyspapseaEvaAlggipysqvyGWyrvsfgviegklerNrdyrrdl 164
+                    + V + L + +  p+ +Ev A     +s++   + + +   ++ l rNr++r++l
+     BGC0001720 562 FRVINGLFKTTSVPKAEEVQATRDKAWSKILDDKVYTYYYSDDSLSRNRKFRDKL 616
+                    66666677788999******************999999999***********986 PP
+
+>> CM_1  Chorismate mutase type I
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.8   0.3   5.6e-05       0.5      16      72 ..     632     689 ..     625     701 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 5.6e-05
+                 HHHHHHHHHHHHHHHHHTT--GGGEEEEEEEE-TT--SS-CCHH.HHHSTTGTSSEEE CS
+        CM_1  16 eeileavkeLleelleeNelkeedivsviftvTkDldaafPaaa.aReklgleevpll 72 
+                 +++ +a++  +++  ++ ++++++i +v++ vT+ ++a+ P+++ +R++  l ++p l
+  BGC0001720 632 ADLIAAANATMQASAKSPNVDKDQINAVVLNVTDQIKAQIPSKVaVRQREFLLQLPQL 689
+                 4455666677778888899**********************98615776666666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (970 residues searched)
+Target model(s):                       17929  (3044345 nodes)
+Passed MSV filter:                       674  (0.0375927); expected 358.6 (0.02)
+Passed bias filter:                      496  (0.0276647); expected 358.6 (0.02)
+Passed Vit filter:                        39  (0.00217525); expected 17.9 (0.001)
+Passed Fwd filter:                         2  (0.000111551); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.64u 2.75s 00:00:03.39 Elapsed: 00:00:03.00
+# Mc/sec: 984.34
+//
+Query:       BGC0001720  [L=409]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+    3.2e-17   62.9   0.0      1e-16   61.3   0.0    1.9  1  SGL             SMP-30/Gluconolactonase/LRE-like region
+  ------ inclusion threshold ------
+       0.11   11.7   0.0       0.18   11.0   0.0    1.2  1  Lactonase       Lactonase, 7-bladed beta-propeller
+       0.13   12.0   0.1         16    5.3   0.1    2.6  2  Proteasome_A_N  Proteasome subunit A N-terminal signature
+
+
+Domain annotation for each model (and alignments):
+>> SGL  SMP-30/Gluconolactonase/LRE-like region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   61.3   0.0   1.7e-20     1e-16      76     235 ..     221     385 ..     188     394 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 61.3 bits;  conditional E-value: 1.7e-20
+         SGL  76 adeeedekpllrfNDgvvdpdGr.lwfGtmgdeeakgeev.....galyrldpdgklervlddltipNGlawspdgktlYlaDsltrk........... 157
+                 + +  ++ + +++ND+ v p+++ ++f+++ +   ++ ++      ++y+++p++k+      +++   + +spdg+ +Y++Ds +++           
+  BGC0001720 221 VNNYYGR-QFNSLNDIGVNPRNShIYFTDPLYAYFQDFRPppalpVQVYKFNPETKA------IQVVASITFSPDGEFVYVTDSGAHHgfrgfdpsrps 312
+                 4554456.889***********99******999999988888888999999999554......455557889*********888776666666666677 PP
+
+         SGL 158 .iwaydvdaeggklsnrrvfadlkkgegepDGlavDaeGnvwvAvwgggkvvrfdpdGklieeiklpakrvtscaFgGp 235
+                  i++++v+++g+  +nr++fa +++g   pDG+ +D++Gnv+v    g+++++f+p Gkl+++i ++    ++  F G+
+  BGC0001720 313 tIYRFNVAEDGT-FENRKTFAFVDNGV--PDGIHCDSKGNVYVG--CGDGIHVFNPSGKLLGKIFTD-GGAANFQFVGN 385
+                 7******87777.*******9999997..***************..5699************99887.67777777666 PP
+
+>> Lactonase  Lactonase, 7-bladed beta-propeller
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0   0.0     3e-05      0.18     240     303 ..     274     349 ..     262     360 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 3e-05
+                 S-S---EEEEEE-TTSSEEEEEETS............STEEEEEEE-TTT--EEEEEEEE-S.SS.--EEEE-TTSS CS
+   Lactonase 240 ftgknsaaeIrlspdgkflyvSnRg............adsiavfavdeadgtltlveevste.gkfPRdfaldpsgk 303
+                  ++ +  a I  spdg+f+yv + g             ++i  f+v ++dgt++  ++++     +P  +  d++g+
+  BGC0001720 274 TKAIQVVASITFSPDGEFVYVTDSGahhgfrgfdpsrPSTIYRFNV-AEDGTFENRKTFAFVdNGVPDGIHCDSKGN 349
+                 44555789****************99**********99********.888999998887654033466666666665 PP
+
+>> Proteasome_A_N  Proteasome subunit A N-terminal signature
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.3   0.1    0.0026        16       7      12 ..     284     289 ..     281     290 .. 0.85
+   2 ?    4.1   0.0    0.0063        38       5      15 ..     358     368 ..     357     368 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 5.3 bits;  conditional E-value: 0.0026
+  Proteasome_A_N   7 tFSPdG 12 
+                     tFSPdG
+      BGC0001720 284 TFSPDG 289
+                     9****9 PP
+
+  == domain 2  score: 4.1 bits;  conditional E-value: 0.0063
+  Proteasome_A_N   5 lttFSPdGRLf 15 
+                     + +F+P+G+L+
+      BGC0001720 358 IHVFNPSGKLL 368
+                     679******96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (409 residues searched)
+Target model(s):                       17929  (3044345 nodes)
+Passed MSV filter:                       411  (0.0229238); expected 358.6 (0.02)
+Passed bias filter:                      354  (0.0197445); expected 358.6 (0.02)
+Passed Vit filter:                        33  (0.00184059); expected 17.9 (0.001)
+Passed Fwd filter:                         3  (0.000167327); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.64u 2.53s 00:00:03.17 Elapsed: 00:00:02.92
+# Mc/sec: 426.42
+//
+Query:       BGC0001720  [L=414]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.1e-12   47.9   0.7    1.6e-12   47.4   0.7    1.2  1  CorA      CorA-like Mg2+ transporter protein
+  ------ inclusion threshold ------
+        1.3    9.0   6.5        2.1    8.3   6.5    1.3  1  DUF615    Protein of unknown function (DUF615)
+
+
+Domain annotation for each model (and alignments):
+>> CorA  CorA-like Mg2+ transporter protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   47.4   0.7   1.7e-16   1.6e-12      95     290 ..     189     401 ..     147     411 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 47.4 bits;  conditional E-value: 1.7e-16
+        CorA  95 ikrlkdeggkpkspgellyrlldeivdrlfellekleeeldeledel...edstkkeilrelaqlrrrlvkl...........rralapnrevlkrlla 179
+                 ++++  e  + +  +  l+++   +   ++ + +++ + l+el+ ++   e+ + +  lrel+++ rrl+ +            + l++ r++ + +l+
+  BGC0001720 189 HRKMN-EAFELRALEAALAAVAAGLEAGYLLVRRDVGAALRELDAQMadkEEASVHTGLRELLDMARRLADIeqqarlvrgalGDLLREDRDMADLYLT 286
+                 55555.556666666666666666666677777889999*********9999999*****************888888888888888888888864444 PP
+
+        CorA 180 ...kaddklldd.edkeylrdlldeler.llemlealrerleslqdtyssllserlNrvmkvLTvltaiflPl...TlitGiyGmNfkglPelewsygy 270
+                    +++ ++ dd e+ eyl + + +++  ++++++al   + +  dt  s+l++r N++m + T + +++l +   Tl++G+yGmN+ +  +le+s  +
+  BGC0001720 287 drrSGRRHEADDhEEVEYLFEAYFRAHDaVVQEASALMANVHRTADTVRSILANRRNQIMILETKVEIAMLGMasaTLVAGWYGMNTVN--FLEESLSA 383
+                 65433333333303445677777777768*******************************999*9988887644449***********7..45555555 PP
+
+        CorA 271 pfvlllglmallailllfwf 290
+                 ++v  +++  +l ++ ++wf
+  BGC0001720 384 FAV--IVSGSVLGGGAIWWF 401
+                 788..666666777777777 PP
+
+>> DUF615  Protein of unknown function (DUF615)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.3   6.5   0.00023       2.1      17     131 ..     222     339 ..     219     351 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 8.3 bits;  conditional E-value: 0.00023
+      DUF615  17 klgeeLaaLskkqlk..klpldeelldalleakrikshrearrRqlqyigkllReadveairaalealknkseeetaalhelerwrdrLiaeddaalee 113
+                 ++g  L +L ++  +  ++++   l++ l  a+r+ + ++  r     +g llRe d +  +  l++ ++++++e++ ++e+e ++++     da+++e
+  BGC0001720 222 DVGAALRELDAQMADkeEASVHTGLRELLDMARRLADIEQQARLVRGALGDLLRE-DRDMADLYLTDRRSGRRHEADDHEEVEYLFEAYFRAHDAVVQE 319
+                 67788888887777666899****************996666667789******7.9999999************************************ PP
+
+      DUF615 114 lleeypev..DrqeLRqlir 131
+                 + +++ +v   + ++R+++ 
+  BGC0001720 320 ASALMANVhrTADTVRSILA 339
+                 **999998554555666555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (414 residues searched)
+Target model(s):                       17929  (3044345 nodes)
+Passed MSV filter:                       825  (0.0460148); expected 358.6 (0.02)
+Passed bias filter:                      555  (0.0309554); expected 358.6 (0.02)
+Passed Vit filter:                        45  (0.0025099); expected 17.9 (0.001)
+Passed Fwd filter:                         2  (0.000111551); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.48u 2.72s 00:00:03.20 Elapsed: 00:00:02.92
+# Mc/sec: 431.63
+//
+Query:       BGC0001720  [L=600]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    8.1e-88  295.1   1.1    8.1e-88  295.1   1.1    1.4  2  TrkH      Cation transport protein
+  ------ inclusion threshold ------
+      0.074   13.0   0.1        0.5   10.3   0.0    2.4  2  DUF2755   Protein of unknown function (DUF2755)
+
+
+Domain annotation for each model (and alignments):
+>> TrkH  Cation transport protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.5   0.2       0.3   2.7e+03     330     355 ..       5      30 ..       2      44 .. 0.49
+   2 !  295.1   1.1     9e-92   8.1e-88     128     497 ..     124     588 ..     120     592 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: -3.5 bits;  conditional E-value: 0.3
+        TrkH 330 GFsvvdlsnlhpaikvllvlmmyigg 355
+                 G+++v ls + +  + +l l  ++g 
+  BGC0001720   5 GLNTVNLSTMTTWQQTMLFLLIVFGS 30 
+                 55555555554444444444333332 PP
+
+  == domain 2  score: 295.1 bits;  conditional E-value: 9e-92
+        TrkH 128 seaqkeelggkelrslselikilvvyyvgleilafvllvvliytakaysevvdstgvsplwwaffhsmSafnnlGfsltpnSlasfnknivillvaiif 226
+                 s a+++   g e+r+l++l+ i+ +y+v++++l+ + l  +i            +g++p w ++f ++Safnn G+sl+++ +++f++ +++l+ + ++
+  BGC0001720 124 SSAKSKQMCGCEYRALELLSIIVPLYFVLWQLLGCISLGAWIHHHM--PDTALTNGINPWWLGLFNGVSAFNNSGMSLLDANMMPFQESYFVLVTMGLM 220
+                 56667778899***************************66665544..444448********************************************* PP
+
+        TrkH 227 iilGnigFpillrviiaikkkilrdl......kqikeslsflldlprrcftLllasgfvwllllelavlnvtdnilfilldegslvvksipkgsrvlka 319
+                 i++Gn+++pi+lr+i +  +k l            + ++++ll+ prr+ t l++s  +w+l++ l+ ln +d++lf +l++++ +v+sip+g rvl +
+  BGC0001720 221 ILAGNTAYPIFLRFIFWSGMKLLDLTteatsfRSTRLAMKLLLKDPRRIYTNLFPSRLTWWLVFMLVCLNGIDWVLFEVLNLHNPAVQSIPVGPRVLVG 319
+                 *********************9886577766678899************************************************************** PP
+
+        TrkH 320 lFqsvstrtaGFsvvdlsnlhpaikvllvlmmyigglpgStaggIrrtnvyeefslgkyeieqekepk.av............................ 389
+                 lFq+ + r+ GF vv++++++ a+++l+v+mmyi+++p  +++ I + n+y+  s   +++++e ++  +                             
+  BGC0001720 320 LFQALAVRSGGFYVVPIAQISIAVQFLYVIMMYISVYP--VVITIHQSNTYTGDS--HHDMDDETHDAsHSprggiisaasypaekrnlataqetrsvs 414
+                 **************************************..***********9765..5677777777744588999*********************** PP
+
+        TrkH 390 .................................................................skksidgkhlerqllvdlwslflvlliililegl 423
+                                                                                   + s++ +++  ql  d+  l+l +lii+i+e+ 
+  BGC0001720 415 gvppaqsfchgpvnqsaatpttaidgrpistrstshsesrhrekrpslpprpfsfrsmsphgtrdGRMSFIHQQIHGQLGQDIRWLVLAVLIIVIIESG 513
+                 *****************************************************************9*****************9999999999999988 PP
+
+        TrkH 424 klsdvqepdfsffdiLfevvSaygtvGLSlG.a.knaslsaqlttisklvlialmirGrlrglpvlldraillpsd 497
+                       + +fs+f ++fevvSaygtvG S+G +    s+  +    sklvl+++m+rGr+r+lp++ldrai+lp +
+  BGC0001720 514 HFDA-DPINFSVFNVIFEVVSAYGTVGISVGtPsGAYSFAGTWYAGSKLVLCLVMLRGRHRVLPMALDRAIQLPDQ 588
+                 8754.4579**********************99899999999*******************************976 PP
+
+>> DUF2755  Protein of unknown function (DUF2755)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.0   5.6e-05       0.5      21      48 ..     223     250 ..     209     260 .. 0.87
+   2 ?   -1.6   0.1      0.29   2.6e+03      22      49 ..     276     306 ..     256     310 .. 0.56
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 5.6e-05
+     DUF2755  21 sgnvayalfvllclwaGaqllnllvhap 48 
+                 +gn ay +f+ + +w+G +ll+l   a 
+  BGC0001720 223 AGNTAYPIFLRFIFWSGMKLLDLTTEAT 250
+                 79*******************9987775 PP
+
+  == domain 2  score: -1.6 bits;  conditional E-value: 0.29
+     DUF2755  22 gnvay.alfvllcl....waGaqllnllvhapG 49 
+                 +++++  +f+l+cl    w+  ++ln  +h p 
+  BGC0001720 276 SRLTWwLVFMLVCLngidWVLFEVLN--LHNPA 306
+                 45554156777777333333333333..46655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (600 residues searched)
+Target model(s):                       17929  (3044345 nodes)
+Passed MSV filter:                       590  (0.0329076); expected 358.6 (0.02)
+Passed bias filter:                      319  (0.0177924); expected 358.6 (0.02)
+Passed Vit filter:                        28  (0.00156172); expected 17.9 (0.001)
+Passed Fwd filter:                         2  (0.000111551); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.63u 2.53s 00:00:03.15 Elapsed: 00:00:02.93
+# Mc/sec: 623.42
+//
+Query:       BGC0001720  [L=1368]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+   3.5e-217  721.9   0.2   5.4e-217  721.3   0.2    1.3  1  Hydantoinase_B  Hydantoinase B/oxoprolinase
+   2.7e-103  345.2   1.2   5.6e-103  344.2   1.2    1.5  1  Hydantoinase_A  Hydantoinase/oxoprolinase
+    6.2e-63  211.7   2.5    1.2e-61  207.5   0.2    2.5  2  Hydant_A_N      Hydantoinase/oxoprolinase N-terminal region
+
+
+Domain annotation for each model (and alignments):
+>> Hydantoinase_B  Hydantoinase B/oxoprolinase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  721.3   0.2    9e-221  5.4e-217       1     515 [.     777    1336 ..     777    1337 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 721.3 bits;  conditional E-value: 9e-221
+  Hydantoinase_B    1 DpitlevfrnrlmsiaeemgrtlqrtaiSpnikerlDfscalfdadgelvaqaphipvhlgsmseavkavlekfegelkpGDvlltNdPyagg 93  
+                      Dpi+l++f +r+m+iae+mgr+lq+t++S+n+kerlDfsca+fda+g+lva+aph+pvhlgsms++v++++e ++g+l++GDv+++NdP +gg
+      BGC0001720  777 DPIMLSIFGHRFMAIAEQMGRALQKTSVSTNVKERLDFSCAIFDAQGGLVANAPHLPVHLGSMSTCVRRQAEIWKGRLEKGDVIASNDPSYGG 869 
+                      9******************************************************************************************** PP
+
+  Hydantoinase_B   94 tHlpDitvitPvfhege..lvffvasraHhaDiGGitpGsmppdateifeEGlrippvklveege.leedvlelllanv.........Rtped 174 
+                      tHlpDit+i+P f +    ++f++asraHhaDiGGit+Gsmpp+++e+f+EG+++++ k+v++g+ +e++++e+l + +         R+++d
+      BGC0001720  870 THLPDITLIMPAFDQSGsrILFYAASRAHHADIGGITAGSMPPNSRELFQEGAVFKSEKIVSKGKfDEKRITEILYEGPaqypgcsgtRCLAD 962 
+                      *************766589************************************************************************** PP
+
+  Hydantoinase_B  175 nlgDlkAqiaanqvgerrlkelieeyGldtveaamdeildnaeravraalaelpd....gtyeaedylddgipikvtvtidgde..atvDftg 261 
+                      n++D++Aq++an++g++++++lieeyG++tv+ +m +i++nae  vr++l+e+++     +++a d++ddg+pi+++v+id+++  a++Df+g
+      BGC0001720  963 NISDMRAQVSANKKGISLIETLIEEYGEETVQFYMVNIQKNAEMCVRNLLKEVHKrfegRDLSALDFMDDGSPIQLRVKIDPEQgeAEFDFAG 1055
+                      ******************************************************99998889999****************99999******* PP
+
+  Hydantoinase_B  262 tspqvkgniNaplavtlsaviyvlrclvdediplNeGclrpievklpegsllnpsepaavvggnvetsqrvvdvvlkalaqalpervaAasqg 354 
+                      t+p+v+gn+Nap+a+t+sa+iy+lrclv+++iplN+Gclrpi+vk+p++sll+ps+ aavvggnv+tsqr++dvvlka++      ++Aasqg
+      BGC0001720 1056 TGPEVYGNVNAPEAITYSAIIYCLRCLVSQEIPLNQGCLRPINVKIPPKSLLSPSPGAAVVGGNVLTSQRITDVVLKAFE------ACAASQG 1142
+                      ********************************************************************************......******* PP
+
+  Hydantoinase_B  355 tmnnltfggvderg....geffgyyetiagGaGArpgkdGasavhvhmtntrntdvEilErryPvlverfelrpdsgGaGkyrGGdGvvreie 443 
+                      ++nnltfg   + +     + fgyyetiagG+GA+p++ G+s+vhvhmtntr+td Ei+ErryPvl+++f++r+dsgG+G+++GGdGv+r+ie
+      BGC0001720 1143 CCNNLTFGFGGNVTgqsaVRGFGYYETIAGGSGAGPDWVGTSGVHVHMTNTRITDSEIFERRYPVLLREFSIRKDSGGKGQHKGGDGVIRDIE 1235
+                      *******844443468886677*********************************************************************** PP
+
+  Hydantoinase_B  444 flepevtvsilserrvfapwGlaGGepGargrvvlnllvr.................................geeenlggkatvelkagdvl 503 
+                      f+ p ++vsilserrv++p+Gl+GGe+G++g    nl+vr                                 ++ +n+g+k++++++agd++
+      BGC0001720 1236 FRIP-LQVSILSERRVYRPYGLKGGEDGQCGL---NLWVRrvekadwqrsmqsvqgatqqeqqekeaqgveyeERYINIGAKNSASMAAGDRI 1324
+                      ***9.***************************...6666667777777799999999999999*********99******************* PP
+
+  Hydantoinase_B  504 vietpGGGGyGd 515 
+                      +i+tpGGGG+G 
+      BGC0001720 1325 IINTPGGGGWGA 1336
+                      ***********6 PP
+
+>> Hydantoinase_A  Hydantoinase/oxoprolinase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  344.2   1.2  9.3e-107  5.6e-103       1     290 [.     250     555 ..     250     556 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 344.2 bits;  conditional E-value: 9.3e-107
+  Hydantoinase_A   1 rtetavvnAylspilreylesvekslekrgak...........arlmvmqsdGglvsadearkkpvetilSGPaaGvvgaaat.sklagekkvIt 83 
+                     r+++++ +Ayl+p +++y++++++ ++    +           ar+ +mqsdGglv+++++++   ++ilSGPa+Gvvg+a t ++ +++ +vI+
+      BGC0001720 250 RATSVCADAYLTPTIKKYIDGFQSGFAGGLGTrsvqetegprgARCEFMQSDGGLVDVEKFTGL--KAILSGPAGGVVGYAITsYDAKTKIPVIG 342
+                     78899*********************9977779999***************************9..*****************88999999**** PP
+
+  Hydantoinase_A  84 fDmGGTstDvslikdgevevsleteiagvkvrlpaldirtvgagGgsilvvdeggklrvgpesagadpgpacyrkGgteltvTDanlvLGrlqpe 178
+                     fDmGGTstDvs++ +g++e+++et++agv++++p+ldi+tv+agGgs+l ++++g + vgpesaga+pgpacyrkGg ++tvTDanl LGrl pe
+      BGC0001720 343 FDMGGTSTDVSRYGEGRYEHVFETTTAGVTIQSPQLDINTVAAGGGSRL-FFRNGLFVVGPESAGAHPGPACYRKGG-PATVTDANLYLGRLLPE 435
+                     *************************************************.***************************.***************** PP
+
+  Hydantoinase_A 179 dfls..gpdgdqkldvelarrafeelakelnlk......veevAegilsvavenmanavrklsvergldpkeltlvvfGGaGaqhaaalaeelgv 265
+                     +f++  g+++dq l+ve+ r+ ++ela+++n +      ++evA+g+l+va+e m +++r++++++g+d +++ l+ fGGaG+qha a+ae+lg+
+      BGC0001720 436 FFPKifGKNEDQGLNVEASRKVLQELADQVNREtgknmsADEVAYGFLTVANEAMTRPIRSITEAKGHDSSKHRLATFGGAGGQHAVAIAESLGI 530
+                     *********************************************************************************************** PP
+
+  Hydantoinase_A 266 kkvivppyagvlsalGmalAdvree 290
+                     ++++v++y++vlsa+GmalAdv  e
+      BGC0001720 531 SQILVHRYSSVLSAYGMALADVVDE 555
+                     *********************9865 PP
+
+>> Hydant_A_N  Hydantoinase/oxoprolinase N-terminal region
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  207.5   0.2   2.1e-65   1.2e-61       1     178 []      11     231 ..      11     231 .. 0.98
+   2 !    3.8   0.2    0.0068        40       2      26 ..     341     364 ..     340     380 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 207.5 bits;  conditional E-value: 2.1e-65
+  Hydant_A_N   1 rigIDvGGTfTDavaldekeeevavlKllst.....pdavaegirealeevleesipr.....tskidvvrmGTTvatNallerkgervaLittkgfrd 89 
+                 ri+ID+GGTfTD+v  + + ++ +++Klls+     +da+ egir+++++ +++ ipr     ts+id++rmGTTvatNallerkger+aLi+tkgf+d
+  BGC0001720  11 RIAIDRGGTFTDCVGEQ-N-GQEIIIKLLSEdpanyKDAPLEGIRRIMSHFTGRDIPRgepldTSQIDSIRMGTTVATNALLERKGERIALIVTKGFKD 107
+                 79*************99.4.6789*************************************************************************** PP
+
+  Hydant_A_N  90 lleigrqnrpdlfelrikkplvlyeevvevdervead...................................gevlkpldeeevrealkalkaagvesi 153
+                  l ig+q+rp++f+l i+kp vlye+vvevderv+++                                   ++++++ d e+++ +lk+++++g++si
+  BGC0001720 108 CLTIGNQSRPRIFDLAIRKPDVLYEQVVEVDERVTLEdyaedpertvtqadavagteaaennelvrglsgetVRIMTRPDHERITTQLKEIYNQGIRSI 206
+                 ************************************99************************************************************* PP
+
+  Hydant_A_N 154 avvllhSylnpehElrvaeiareig 178
+                 av+l+h y++p+hE +++++a+e+g
+  BGC0001720 207 AVCLMHGYTFPDHEAAIGKLAKEVG 231
+                 *********************9975 PP
+
+  == domain 2  score: 3.8 bits;  conditional E-value: 0.0068
+  Hydant_A_N   2 igIDvGGTfTDavaldekeeevavl 26 
+                 ig D+GGT TD+  + e+ +  +v+
+  BGC0001720 341 IGFDMGGTSTDVSRYGEG-RYEHVF 364
+                 899********9877766.444554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (1368 residues searched)
+Target model(s):                       17929  (3044345 nodes)
+Passed MSV filter:                       489  (0.0272742); expected 358.6 (0.02)
+Passed bias filter:                      413  (0.0230353); expected 358.6 (0.02)
+Passed Vit filter:                        32  (0.00178482); expected 17.9 (0.001)
+Passed Fwd filter:                         3  (0.000167327); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.59u 2.67s 00:00:03.26 Elapsed: 00:00:02.93
+# Mc/sec: 1421.39
+//
+Query:       BGC0001720  [L=2211]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+      2e-78  263.5   0.9      1e-76  257.9   0.0    2.7  3  ketoacyl-synt    Beta-ketoacyl synthase, N-terminal domain
+    1.6e-43  149.4   0.1    8.2e-41  140.5   0.0    2.4  2  Acyl_transf_1    Acyl transferase domain
+    6.3e-33  113.3   0.1    1.8e-32  111.8   0.1    1.9  1  Ketoacyl-synt_C  Beta-ketoacyl synthase, C-terminal domain
+    4.3e-24   84.6   3.9    1.3e-11   44.6   0.9    2.7  2  PP-binding       Phosphopantetheine attachment site
+    1.7e-22   80.3   1.3    1.1e-20   74.4   1.1    2.8  2  SAT              Starter unit:ACP transacylase in aflatoxin b
+    1.5e-16   61.2   0.1    8.6e-15   55.5   0.0    3.2  3  Thioesterase     Thioesterase domain
+    3.6e-13   49.4   0.0      7e-13   48.5   0.0    1.4  1  PS-DH            Polyketide synthase dehydratase
+    5.2e-07   30.5   1.3    0.00011   22.9   0.4    3.0  2  Abhydrolase_6    Alpha/beta hydrolase family
+    0.00012   22.5   0.0    0.00028   21.3   0.0    1.7  1  KAsynt_C_assoc   Ketoacyl-synthetase C-terminal extension
+     0.0018   17.7   0.0     0.0039   16.6   0.0    1.4  1  Thiolase_N       Thiolase, N-terminal domain
+  ------ inclusion threshold ------
+      0.013   15.4   0.2      0.048   13.5   0.2    2.0  1  ACP_syn_III      3-Oxoacyl-[acyl-carrier-protein (ACP)] synth
+      0.039   13.8   0.1        1.2    9.0   0.0    2.5  2  Lipase_3         Lipase (class 3)
+      0.066   12.8   0.1        0.2   11.3   0.0    1.8  2  Abhydrolase_1    alpha/beta hydrolase fold
+       0.18   11.6   0.1       0.81    9.4   0.0    1.9  2  Abhydrolase_5    Alpha/beta hydrolase family
+
+
+Domain annotation for each model (and alignments):
+>> ketoacyl-synt  Beta-ketoacyl synthase, N-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  257.9   0.0     8e-80     1e-76       3     253 .]     382     627 ..     381     627 .. 0.94
+   2 ?    3.3   0.0      0.04        51      94     170 ..     986    1072 ..     964    1080 .. 0.78
+   3 ?   -4.0   0.0         7     9e+03     143     166 ..    1982    2005 ..    1975    2009 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 257.9 bits;  conditional E-value: 8e-80
+                    -EEEEEEEEEBTTBSSHHHHHHHHHTT---EEES-TTSSCGTTSBTSSTTEEE-BSS.EEE..S.TTEGGTTSTHHHHHHHCTS-HHHHHHHHHHH CS
+  ketoacyl-synt   3 pvaivGmgarfPggndveefwelLlegrdaiselpadrwdadklydpparaagkiktklggfld.vddfdpeffgispreaeamdpqqrllleaaw 97 
+                    ++aivGm++ +Pg+ d++++w++L++g +a+se+p +r++++++  ++ +   + +tk+g+fl+  + fd+e fgis rea++mdpqqr+ll++a+
+     BGC0001720 382 DIAIVGMAVELPGASDADTLWQNLVDGYQACSEIPPSRFNVNDY--NNGKGSRTLNTKYGNFLEnPFLFDAEHFGISRREAKSMDPQQRILLQTAY 475
+                    7*******************************************..599999999999************************************** PP
+
+                    HHHHHHTS-HHTCTTGG...EEEEEEESSTHHHHHHHHHHHTTGGGSCTTHHHHHSTTHHHHHHHHHHT--SSEEEEESGGGHHHHHHHHHHHHHH CS
+  ketoacyl-synt  98 ealedagltpeeldgsr...vgvfiGvgagdyaalaaldedgsevkaspkavgavlanviagrisyalglrGpsvtvdtACsSslvavhaavqslr 190
+                    +aledag+ p+++ +s+   +g+ iG +  dy +   l++   + +++   +g+ l++++++risy +g+ Gps+t+dtACsSs va+h+a +s+ 
+     BGC0001720 476 RALEDAGYVPDTTTSSArdtFGCWIGNATLDYVD--NLRS---DIDVYY-STGT-LRAFLSARISYVFGWSGPSITLDTACSSSIVALHQAARSIL 564
+                    **********998555556788888888888843..4553...367888.9999.***************************************** PP
+
+                    TTS-SEEEEEEEE---SHHHHHHHHHTTBB-TTSGGGTTBTTB-SB-BB-EEEEEEEEECHHH CS
+  ketoacyl-synt 191 sgeadvalaGGvellltpeavagfsaagllspdgrckafdpkadGfvlGEGvGavvLkrleda 253
+                    +g++  al+G+++++++p  + g+++a++lsp+g+ckafd++adG++++EG+G++v+krl+da
+     BGC0001720 565 AGDCRSALVGAANTITSPDMYLGLDRAHFLSPSGQCKAFDASADGYCRAEGCGVFVIKRLSDA 627
+                    *************************************************************98 PP
+
+  == domain 2  score: 3.3 bits;  conditional E-value: 0.04
+                     HHHHHHHHHHTS-HHTCTTGGEEEEEEESSTHH..........HHHHHHHHHTT.GGGSCTTHHHHHSTTHHHHHHHHHHT--SSEEE CS
+  ketoacyl-synt   94 eaawealedagltpeeldgsrvgvfiGvgagdy..........aalaaldedgs.evkaspkavgavlanviagrisyalglrGpsvt 170 
+                     +a ++ le+ g+ p+++ g + g ++++  +            a+ a+l +++    ++s+ av++ +a+vi ++i  + +++G +++
+     BGC0001720  986 VALAKLLESWGIRPQAVAGHSLGEYAALVTAGVirlmdglklvAHRAKLMMEQCdLGQTSMLAVNC-SAAVITSIIEASTDFEGLAIS 1072
+                     577899*************99777777777733334456778755555555555567777799999.*****************9987 PP
+
+  == domain 3  score: -4.0 bits;  conditional E-value: 7
+                     TTHHHHHSTTHHHHHHHHHHT--S CS
+  ketoacyl-synt  143 pkavgavlanviagrisyalglrG 166 
+                     ++a  +++an  a+ is+++g++G
+     BGC0001720 1982 SWASLTTMANEYASSISSTMGMTG 2005
+                     3333345999999********999 PP
+
+>> Acyl_transf_1  Acyl transferase domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    6.4   0.0    0.0043       5.5     140     207 ..     195     262 ..     179     289 .. 0.80
+   2 !  140.5   0.0   6.4e-44   8.2e-41       1     299 [.     910    1228 ..     910    1245 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 6.4 bits;  conditional E-value: 0.0043
+                    HHH..TT.EEEEEEECCCCECCEEHHHHHHHHHHHHHCC.CCEEECCCEECTTCCCCCCCCHHHHHHH CS
+  Acyl_transf_1 140 klrcqddvvgavansprrvvisgsqealrelvervskegvgalvenvnvavhspqvdaiadalasala 207
+                    k  + ++v +++  sp rv+isg + +l+ ++ +   ++ +  v +v    h + + ++++   ++l 
+     BGC0001720 195 KTNMGNEVFVSAILSPTRVTISGIPTKLSTFISKHLPANCRTTVAVVHSLYHHESLLEVRNLVMADLE 262
+                    4457789***************************9999999999999888887777777776666655 PP
+
+  == domain 2  score: 140.5 bits;  conditional E-value: 6.4e-44
+                     EEEE--TT---TTTTCCHHHC-HHHHHHHHHHHHHCCHHHT--HHHHHHS--T......TGGGSHHHHHHHHHHHHHHHHHHHHHTT-TTSEEE CS
+  Acyl_transf_1    1 vfvfsGqGsQwaGMGmeLlktskafaaviaradeafksqygfsvldvlrnnpe......glldaiqfvqpaLaavqialaellkskGvrpaavv 88  
+                     vf+fsGqGsQ  GMG+eL+++ + fa +++ +d  + ++   s l v++ ++             q  q a+ ++++ala ll+s G rp av+
+     BGC0001720  910 VFIFSGQGSQYLGMGRELIEQYEDFAHTVNVCDGWLVKNNYPSCLAVITGEQReseddkVDAHTWQSFQSAIYVIEVALAKLLESWGIRPQAVA 1003
+                     8**********************************999999999999987776666655555567899************************** PP
+
+                     E-TTHHHHHHHHCCSSSHHHHHHHHHHHHHHHHHHT..S-EECCEECS......HHHHHHH..TT.EEEEEEECCCCECCEEHHHHHHHHHHHH CS
+  Acyl_transf_1   89 GHSlGElAaavvagalsseeallavvlrsrlmmqla..gpgdmaavel.....aeeeeklrcqddvvgavansprrvvisgsqealrelvervs 175 
+                     GHSlGE+Aa+v ag + ++++l+ v+ r +lmm+    g+  m+av+      + + e+  +++ +  ++ ns+   v++g+  +l  l +++ 
+     BGC0001720 1004 GHSLGEYAALVTAGVIRLMDGLKLVAHRAKLMMEQCdlGQTSMLAVNCsaaviTSIIEASTDFEGLAISCNNSETDCVVGGPVPQLVLLKKHLT 1097
+                     ********************************998778999*****998766555556666999*****************************9 PP
+
+                     HCC..CCEEECCCEECTTCCCCCCCCHHHHHHHH.CCCHHCHHTTBEHCCCHHH..HHHCHHHHHHHHHHHCHCCHCCHHTTS.....SSECC- CS
+  Acyl_transf_1  176 keg.vgalvenvnvavhspqvdaiadalasalad.iaprkpkvakisstsldes..serelsaeywvanlrspvrfaeavlsa.....aetipl 260 
+                      +  v+ +  +v +a+h +++d+i ++  +  a  ++  +p+++  s +  +     e+ +s ey ++  r +v f++ +++       e+ p 
+     BGC0001720 1098 DRAqVRSKLLDVPMAFHTAAMDPILEEFTAFAAReVRVFPPTLPVVSNVLGRTVavGEQAFSPEYFAKQCRGTVAFDDGIKHFlalgdCESTPY 1191
+                     99889**********************99888775777778999999998888777999***********************877777788999 PP
+
+                     CCEECSSSSCCHCCCCCCCHHGGG-TCCCCCCTEETTSS CS
+  Acyl_transf_1  261 vfveispHslllaalektlksaedvksatlvGklkrdlt 299 
+                       +ei pH+ ++  l+  l +   + s   + +lk+++ 
+     BGC0001720 1192 RWIEIGPHPSVQPMLRGRLGK--AATSHIQLTTLKKNVP 1228
+                     9**********9998877773..3333333344666655 PP
+
+>> Ketoacyl-synt_C  Beta-ketoacyl synthase, C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  111.8   0.1   1.4e-35   1.8e-32       1     117 [.     635     752 ..     635     753 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 111.8 bits;  conditional E-value: 1.4e-35
+                      SEEEEEEEEEE--STSSSTSTTHHHHHHHHHHHHHHHT--GGGEEEEE-SS-SSHHHHHHHHHHHHHHHGGGGG.SCTSEEE-THHHH-B-GGG CS
+  Ketoacyl-synt_C   1 yavikgsavnsdgahnsltapngeaqaraiekalaeagvdpedvdyveahgtgtplgDpiElealkkvfgekar.kqplavgSvKsniGHleaA 93 
+                      ++vik++ +n++g++ s+t+p+   q+++  k+++e++++p+++++ve+hgtgt++gDp+E+e++++++++ ++  +p++++S K+niGH+ea 
+       BGC0001720 635 HGVIKAIEINQSGNTHSITHPHVPTQEALFDKMFRESRINPHEISVVEMHGTGTQAGDPNEVESVRRALCKARSpLNPVYLTSLKANIGHAEAV 728
+                      589********************************************************************999988***************** PP
+
+                      HHHHHHHHHHHHHHHTEE--BTT- CS
+  Ketoacyl-synt_C  94 aGvaelikvvlalkhgvipptlnl 117
+                      +G+a+l+k++l+ ++g+ipp+++l
+       BGC0001720 729 SGIAGLAKLILMTRNGYIPPQVSL 752
+                      *********************987 PP
+
+>> PP-binding  Phosphopantetheine attachment site
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.2   0.1   2.5e-13   3.2e-10       5      66 ..    1689    1750 ..    1686    1751 .. 0.95
+   2 !   44.6   0.9     1e-14   1.3e-11       4      67 .]    1797    1861 ..    1795    1861 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 40.2 bits;  conditional E-value: 2.5e-13
+  PP-binding    5 elvaevlgvpleeidpdtdlfdlGlDSllavellaaleeefgveiplsdlfehptlaelaay 66  
+                  elva+v+g+++ ++++d+ l+  G+DSl+ +e++aal+ ++gv++ +++l  ++t++++ ++
+  BGC0001720 1689 ELVAKVCGLDAGQLGVDSRLDAHGVDSLMGIEIAAALSSALGVDVLPDTLGSCDTVGDIERL 1750
+                  79************************************************66******9875 PP
+
+  == domain 2  score: 44.6 bits;  conditional E-value: 1e-14
+  PP-binding    4 relvaevlgvpleeidpdtdlfdlGlDSllavellaaleeef.gveiplsdlfehptlaelaayl 67  
+                  +++vae++g  +e+++pd+ l+ lG+DSl+++el+ +l++   g+++++ dl +++t++++ +++
+  BGC0001720 1797 VQIVAELCGARAEAVSPDSELRALGVDSLMFLELADRLQDLDrGIALSSNDLADCQTIGDIERLI 1861
+                  79*************************************9446*********99*******9876 PP
+
+>> SAT  Starter unit:ACP transacylase in aflatoxin biosynthesis
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   74.4   1.1   8.4e-24   1.1e-20      29     240 .]      37     246 ..      28     246 .. 0.81
+   2 ?    2.7   0.0     0.068        88     139     225 ..    1019    1099 ..    1003    1115 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 74.4 bits;  conditional E-value: 8.4e-24
+         SAT  29 FLekasealraeisrlpaaerkslp.......rftslqellerysesglkspalssallciaqlaqfivyleenpeeypspestylvGlCtGllaAaav 120
+                 +L++++++ r+++s+     r+ lp       +f   + l +   ++++++++++ a l+++q+  ++   +e +      +  + +G+CtGll+Aa++
+  BGC0001720  37 LLQSCHRTFREQVSDA--IARNILPedsidldDFAEPASLIRP-LSKYSRNVVMQHAALYLHQILAYMTSQKELG------NLIGSAGFCTGLLPAAVA 126
+                 6888888888888864..5555555555523366666666666.9************************974333......356679*******99877 PP
+
+         SAT 121 .acskslseLvplaveavrvafrlGlevar.....vaarleegsssssesWslavtglseeelekalaefneekglppasrvyisavssss.vtisGpP 212
+                  a+ +s+ +L++ + ++ +va+++G+++ +      +++ ++ + +s  + s++  g+se++++++l+++n  ++      v++sa+ s++ vtisG P
+  BGC0001720 127 aASQTSVITLISQSHHFFQVALWIGIRSEQyrvdhLTNDTQDADGESMLPCSYVLEGVSEAAAQDLLHKTNMGNE------VFVSAILSPTrVTISGIP 219
+                 2566789********************999875554444446666667789*******************99998......9******9999******* PP
+
+         SAT 213 stleallksskakkkkkksklpiyapyH 240
+                 + l+++++++  ++ +++    +++ yH
+  BGC0001720 220 TKLSTFISKHLPANCRTT-VAVVHSLYH 246
+                 **********99999987.566788887 PP
+
+  == domain 2  score: 2.7 bits;  conditional E-value: 0.068
+         SAT  139 vafrlGlevarvaarleegsssssesWslavtglseeelekalaefneekglppasrvyisavssss.vtisGpPstleallksskak 225 
+                  + +  Gl+ ++ +a+l +++ +  ++ +lav  +s + +++++++ ++ +g      + is+ +s++ +++ Gp   l  l k+    
+  BGC0001720 1019 IRLMDGLKLVAHRAKLMMEQCDLGQTSMLAVN-CSAAVITSIIEASTDFEG------LAISCNNSETdCVVGGPVPQLVLLKKHLTDR 1099
+                  55555665555555555456666666777776.899999999999999999......67******999******99995444433333 PP
+
+>> Thioesterase  Thioesterase domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.8   0.0      0.35   4.5e+02      52      83 ..     984    1015 ..     964    1018 .. 0.79
+   2 !   55.5   0.0   6.7e-18   8.6e-15       2     106 ..    1941    2047 ..    1940    2056 .. 0.86
+   3 ?   -0.5   0.0      0.88   1.1e+03     189     216 ..    2162    2189 ..    2146    2200 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 0.8 bits;  conditional E-value: 0.35
+                    HHHHHHHHHHH-SSSSEEEEEETHHHHHHHHH CS
+  Thioesterase   52 aaeyaealrqiqpegPyalfGhSlGgllAfev 83  
+                    ++  ++ l+++    P a++GhSlG + A  +
+    BGC0001720  984 IEVALAKLLESWGIRPQAVAGHSLGEYAALVT 1015
+                    55666677777777899********7766665 PP
+
+  == domain 2  score: 55.5 bits;  conditional E-value: 6.7e-18
+                    EEEEE--TTCCSGGGHHHHHHCTTCEEEEEEECSTTST...SHHHCTTCHHHHHHHHHHHHHHH-SS..S.SEEEEEETHHHHHHHHHHHHHHHC CS
+  Thioesterase    2 pLflfppagGsasvfrslasklsdpvvevlavqlpgre...rdepplesieelaaeyaealrqiqpe..g.PyalfGhSlGgllAfevArqLesq 90  
+                    pLfl +++ G ++++r l+   ++    vla+  p +    ++++   s++++a+eya  + ++     g    l+G+S+Gg +Afe+Ar L s+
+    BGC0001720 1941 PLFLIHDGSGICTHYRGLRPLGRR----VLALHDPKFLiqsSKQRSWASLTTMANEYASSISSTMGMtgGeDCILGGWSFGGVVAFEAARILMSR 2031
+                    8*****************999888....444444444444489999****************987532246************************ PP
+
+                    T-SEEEEEEESCCCCC CS
+  Thioesterase   91 Glavkslflidssaps 106 
+                    G+ vk+++lids++p 
+    BGC0001720 2032 GHRVKGVVLIDSPPPI 2047
+                    **************95 PP
+
+  == domain 3  score: -0.5 bits;  conditional E-value: 0.88
+                    CCCHCHCHCTCESCEEEEEESSHCCHHH CS
+  Thioesterase  189 lelaerweqktsgevsvhvlegdhfyll 216 
+                     + +++we  t g+++   ++g+hf   
+    BGC0001720 2162 SLATAGWEILTGGPIQCLDIPGNHFQVF 2189
+                    334555*******************876 PP
+
+>> PS-DH  Polyketide synthase dehydratase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   48.5   0.0   5.4e-16     7e-13      28     244 ..    1334    1573 ..    1313    1625 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 48.5 bits;  conditional E-value: 5.4e-16
+                  .TTTSEEETTEEB--TTHHHHHHHHHHHHTS...---.-EEEEEEEE----.B--SS-EEEEEEEEE-TTS-E....EEEEEEE-SS-TT....EEE CS
+       PS-DH   28 pwLrDHrvdgkvvlPgagylemaleAarqlt...geskavelrdvsilkalvlpedepvevqlslepeedgadrawvefeifSregggee...wteh 118 
+                  ++++ H v g ++ P+ +y em+l+A+++     g+s ++ l  vs+ +++v + +++  ++++++p+     + +++f ++S+ +g++     t+h
+  BGC0001720 1334 EFIEGHLVCGYALCPASVYHEMVLAALNDCQsaaGSSVVWGLSKVSYCAPMVYDGNSNQVLRVVITPRLTL--PDRYDFAVMSYVAGTDPnerSTVH 1428
+                  69************************887663336668999*************999**********9544..569**********998899***** PP
+
+                  EEEEEEE-----................--B--HHHHHH....HS-SEE....E-HHHHHHHHHHHSEEE-GGG--EEEEEEE..TTEEEEEE---G CS
+       PS-DH  119 atGtvrlaegaa................aaavdlealqa....rcaepaslrsvssaefYerlaargleyGpsFqglralwrg..dgealaelrlpe 193 
+                  ++G v+  + a                 +    l+         +++ + ++ +s+++ Ye++  r +ey + +q++++++ +  +geala++  p+
+  BGC0001720 1429 CRGVVKQSNMASaelkysrlqasmkgsmD---GLK---HvgqlGAPAASCVQVFSKRAMYEKIFTRVVEYSDPYQKVETIRIRedTGEALATCVSPA 1519
+                  ******88777777888888776553331...223...13333555555567789***********************988887789*********9 PP
+
+                  GGSSTTTT-SB.-HHHHHHHHHHG..GG----------EEEEEEEEEEE-S.... CS
+       PS-DH  194 elaggesayvl.hPallDaalQllaaalsaeaekadaaylPvaierlrvyr...p 244 
+                     +++s ++  h + +D++l++ + +    +  +d + +   ++  +  r    
+  BGC0001720 1520 PYLARDSSIPAsHAIFMDVLLHVAGFVS-NLNLPNDVMGICKEVGGATTLRapvV 1573
+                  999999999999**********554433.33445555555555555555555552 PP
+
+>> Abhydrolase_6  Alpha/beta hydrolase family
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.0   0.0     0.025        32      45      85 ..     972    1017 ..     920    1211 .. 0.68
+   2 !   22.9   0.4   8.3e-08   0.00011      18     105 ..    1960    2057 ..    1942    2192 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 5.0 bits;  conditional E-value: 0.025
+                     --HHHCHHH....HHHHCCTT....TTSEEEEEETCH..HHHHHHHHHC CS
+  Abhydrolase_6   45 ldledladl....aalldelaa..gggpvvlvGHSlG..Galalaaapl 85  
+                     ++++  +      + +l++l +  g +p  + GHSlG  +al++a   +
+     BGC0001720  972 HTWQSFQSAiyviEVALAKLLEswGIRPQAVAGHSLGeyAALVTA---G 1017
+                     55555333323334455555557999999********99776666...2 PP
+
+  == domain 2  score: 22.9 bits;  conditional E-value: 8.3e-08
+                     HHHHHHCCTCEEEEE--TTSTS-GGCS--HHHCHHHHHHHCCTT...........TTSEEEEEETCHHHHHHHHHHCC.......EE.EEES-. CS
+  Abhydrolase_6   18 pLaallaagvhvlapDlpGhGrsdpppldledladlaalldelaa.........gggpvvlvGHSlGGalalaaapla.....lvvg.vlldpp 96  
+                     pL    +++v  la+  p +  ++++  +++ l + a+   e a+         gg + +l G+S+GG++a +aa+ +     +v g vl+d+p
+     BGC0001720 1960 PL----GRRV--LALHDPKFLIQSSKQRSWASLTTMAN---EYASsisstmgmtGGEDCILGGWSFGGVVAFEAARILmsrghRVKGvVLIDSP 2044
+                     33....2233..67777777666777788866555533...2222333577789999****************666669*99987889*****7 PP
+
+                     .----TTT....S CS
+  Abhydrolase_6   97 ptalpagl....l 105 
+                     p+++ ++l    +
+     BGC0001720 2045 PPIGHIPLsesiI 2057
+                     7444444422331 PP
+
+>> KAsynt_C_assoc  Ketoacyl-synthetase C-terminal extension
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.3   0.0   2.2e-07   0.00028      21     109 ..     775     877 ..     756     880 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 21.3 bits;  conditional E-value: 2.2e-07
+  KAsynt_C_assoc  21 pwpggi......vgvNsfGfGGsnvHviLksnkkekrkeeskeeslprLlv..lsgrteeaveallekleehlldaells....llneilseeis 103
+                     +wp+           N fG GGsn+ vi+ ++ +++++e+++ +   +++v  +s++++ a+ +l e+++++l +a + +    l++ +++   +
+      BGC0001720 775 EWPRAGpkkarmSMLNNFGAGGSNAAVIIGEHLSQDESEAQQPACGATIFVcgVSAKNDRALVKLQETVADYLTSAGQSRkppsLADVCATLTSR 869
+                     555544445554668*****************9999888888566666665337*****************965554444344233333333333 PP
+
+  KAsynt_C_assoc 104 r..lpyRG 109
+                     r  +++R 
+      BGC0001720 870 RqmYNHRV 877
+                     34477775 PP
+
+>> Thiolase_N  Thiolase, N-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.6   0.0     3e-06    0.0039      74     120 ..     538     584 ..     528     601 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 16.6 bits;  conditional E-value: 3e-06
+                 TTSEEEEEEHGGGHHHHHHHHHHHHHHTTSHSEEEEEEEEESTTS-E CS
+  Thiolase_N  74 eevpavtvnkvcsSglkavalaaqsiaageadvvvagGvEsmsnapt 120
+                 ++ p++t++ +csS++ a+++aa+si ag++  +++g + +++  ++
+  BGC0001720 538 WSGPSITLDTACSSSIVALHQAARSILAGDCRSALVGAANTITSPDM 584
+                 677999******************************98888877665 PP
+
+>> ACP_syn_III  3-Oxoacyl-[acyl-carrier-protein (ACP)] synthase III
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.5   0.2   3.7e-05     0.048       4      38 ..     546     580 ..     543     586 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 13.5 bits;  conditional E-value: 3.7e-05
+                  E-GGGHHHHHHHHHHHHHHTTS-SEEEEEEEEEGG CS
+  ACP_syn_III   4 naaCsgfvyalsvAdaliesgaakrvLvigaetls 38 
+                   +aCs+ ++al++A++ i +g ++ +Lv +a+t++
+   BGC0001720 546 DTACSSSIVALHQAARSILAGDCRSALVGAANTIT 580
+                  689*************************9999876 PP
+
+>> Lipase_3  Lipase (class 3)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.0   0.0   0.00094       1.2      31      87 ..     965    1020 ..     929    1034 .. 0.83
+   2 ?    1.7   0.0      0.17   2.2e+02      46      92 ..    1988    2034 ..    1969    2062 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 9.0 bits;  conditional E-value: 0.00094
+                  TT-EEEHHHHHHHHS-HHHHHHHHHHHHHHHTT-EEEEEEEETHHHHHHHHHHHHHH CS
+    Lipase_3   31 eggkvhsgfleayeeslreqvlkelkrllekypeysivvtGHSLGgalAlLaaldlv 87  
+                  e+ kv    +++++ s+ + ++  l +lle+      +v+GHSLG   Al++a +++
+  BGC0001720  965 EDDKVDAHTWQSFQ-SAIYVIEVALAKLLESWGIRPQAVAGHSLGEYAALVTAGVIR 1020
+                  67889999999999.******************9999********999999887765 PP
+
+  == domain 2  score: 1.7 bits;  conditional E-value: 0.17
+                  -HHHHHHHHHHHHHHHTT-EEEEEEEETHHHHHHHHHHHHHHHTT-S CS
+    Lipase_3   46 slreqvlkelkrllekypeysivvtGHSLGgalAlLaaldlvengen 92  
+                  +++++  +++++ +       +++ G S+Gg +A  aa  l ++g +
+  BGC0001720 1988 TMANEYASSISSTMGMTGGEDCILGGWSFGGVVAFEAARILMSRGHR 2034
+                  47777778888888888888999************999999999854 PP
+
+>> Abhydrolase_1  alpha/beta hydrolase fold
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.8   0.0       6.2     8e+03      62      83 ..     987    1008 ..     977    1008 .. 0.84
+   2 ?   11.3   0.0   0.00015       0.2      70     116 ..    2004    2052 ..    1976    2097 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: -3.8 bits;  conditional E-value: 6.2
+                     HHHHHHHHCTTSSEEEEEETHH CS
+  Abhydrolase_1   62 dldrildalgddkltlvGhSmG 83  
+                      l ++l++ g+++ ++ GhS+G
+     BGC0001720  987 ALAKLLESWGIRPQAVAGHSLG 1008
+                     45688999*************9 PP
+
+  == domain 2  score: 11.3 bits;  conditional E-value: 0.00015
+                     CTTSSEEEEEETHHHHHHHHHHHHH...GGGEEEEEEESE......CSSCCHHHHH CS
+  Abhydrolase_1   70 lgddkltlvGhSmGGmialayaaey...perVkalvllga......idpaasliea 116 
+                     +g +  +l G+S+GG +a+++a       +rVk++vl+++      i        +
+     BGC0001720 2004 TGGEDCILGGWSFGGVVAFEAARILmsrGHRVKGVVLIDSpppighI-------PL 2052
+                     677788899**************9999*************4444442.......33 PP
+
+>> Abhydrolase_5  Alpha/beta hydrolase family
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.7   0.0       1.6   2.1e+03      59      73 ..    1000    1014 ..     981    1054 .. 0.75
+   2 ?    9.4   0.0   0.00063      0.81      54      95 ..    2004    2049 ..    1983    2079 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: -1.7 bits;  conditional E-value: 1.6
+  Abhydrolase_5   59 fvvgGhslGGvvasr 73  
+                       v+GhslG  +a  
+     BGC0001720 1000 QAVAGHSLGEYAALV 1014
+                     579******766544 PP
+
+  == domain 2  score: 9.4 bits;  conditional E-value: 0.00063
+  Abhydrolase_5   54 pklekfvvgGhslGGvvasrfaa....eeekiegvvflasYPekde 95  
+                      + e+ ++gG s+GGvva + a+    + ++++gvv++ s P  ++
+     BGC0001720 2004 TGGEDCILGGWSFGGVVAFEAARilmsRGHRVKGVVLIDSPPPIGH 2049
+                     3457899**********9777766654557*********9997554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (2211 residues searched)
+Target model(s):                       17929  (3044345 nodes)
+Passed MSV filter:                       321  (0.017904); expected 358.6 (0.02)
+Passed bias filter:                      289  (0.0161191); expected 358.6 (0.02)
+Passed Vit filter:                        36  (0.00200792); expected 17.9 (0.001)
+Passed Fwd filter:                        14  (0.000780858); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):              14  [number of targets reported over threshold]
+# CPU time: 0.56u 2.80s 00:00:03.36 Elapsed: 00:00:02.91
+# Mc/sec: 2313.07
+//
+Query:       BGC0001720  [L=350]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+    2.5e-23   82.6  21.7    2.5e-23   82.6  21.7    2.0  2  MFS_1          Major Facilitator Superfamily
+     0.0002   20.8   0.5    0.00052   19.4   0.5    1.7  1  MFS_4          Uncharacterised MFS-type transporter YbfB
+  ------ inclusion threshold ------
+      0.026   13.4   0.0        4.2    6.1   0.1    2.3  2  PTR2           POT family
+        3.4    5.8   6.7         10    4.2   0.2    2.8  3  BT1            BT1 family
+
+
+Domain annotation for each model (and alignments):
+>> MFS_1  Major Facilitator Superfamily
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   82.6  21.7   5.6e-27   2.5e-23      91     350 ..       1     305 [.       1     308 [. 0.82
+   2 !   11.9  10.8   1.8e-05     0.079      76     161 ..     240     330 ..     224     349 .. 0.51
+
+  Alignments for each domain:
+  == domain 1  score: 82.6 bits;  conditional E-value: 5.6e-27
+       MFS_1  91 lrvlqGlgagalfpagaaliadwfpkeergraigllsagfslGailgpllggllasslgWravfyilaivsllafvlfllllpeepperkrkspkeee. 188
+                 +r+l+G ++++++++ga  +ad++  ++rg a+g++ +g  lG+++ p++gg+l++ +gWr++ + + + + l+ +   + ++ +++++k +++ke   
+  BGC0001720   1 MRFLAGGASASVAAVGAGTVADLWEVKRRGTAMGYFFLGPMLGPLVSPIIGGILTQRFGWRSTQWGAVVYGGLVWLS--MIFLLPETSSKAVKGKEPAv 97 
+                 7*****************************************************************99999999775..66667777777777777778 PP
+
+       MFS_1 189 ........kgtgpaplvp...............awkallkdpvlwillialllfffgfsglltllpl.ylqevlglsglllaglllallalvgailall 263
+                         ++++p ++v+               + ++l+++p ++   + + + f+++++l   +   + ++ + +  ++++gll+  +al++++++++
+  BGC0001720  98 aensddgnVQPVPESCVSrffkalgrmlvepfrLVGYLRSPPLFM-TCYYASISFACYYILNLAIQRtFSRDPYSFR-AIILGLLYIPSALGSIVASVV 194
+                 899888885555555555777777777777787888999999664.4444444445777755555554558888888.799999999999999999*** PP
+
+       MFS_1 264 agrlsdr....................lgrrrrlllallllllaalglallavtssavllll....vlvliGfglgfvfpsllalasdlappeeagtas 338
+                 +gr+ d                      ++ r+   a + ++++ ++l+++++t++  ++++    v +++G+g +++f ++++++++ +p  +a  a+
+  BGC0001720 195 GGRWTDYvmrreakaagrfdesgnpkfRPSDRMCENAWIPAFVFPAALLVFGWTTHEGIFWFapivVTFFFGLGNSLIFNTATTMLTEILP-GKASNAV 292
+                 *******988888888888888777776668999999999999999999999998888888877777777********************8.******* PP
+
+       MFS_1 339 glfntags.lgga 350
+                 +l+n++++ l++a
+  BGC0001720 293 ALNNLMRNtLSCA 305
+                 ****888846655 PP
+
+  == domain 2  score: 11.9 bits;  conditional E-value: 1.8e-05
+       MFS_1  76 lllll..fass....lw.lllvlrvlqGlgagalfpagaaliadwfpkeergraigllsagfslGailgpllggllasslgWravfyilaivs 161
+                 ++ll+  ++ +    +w + +v+ ++ Glg +++f ++ ++++++ p+ + + a++l +++ +  +  ++++   l+ ++g +++f  la+++
+  BGC0001720 240 AALLVfgWT-ThegiFWfAPIVVTFFFGLGNSLIFNTATTMLTEILPG-KASNAVALNNLMRNTLSCAAAVATDPLLGAIGTQWLFTGLAVIC 330
+                 112220122.11233444556666666666666666666666666666.55555555555544444333333333333555666666666655 PP
+
+>> MFS_4  Uncharacterised MFS-type transporter YbfB
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.4   0.5   1.2e-07   0.00052      87     186 ..       1      98 [.       1     117 [. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 19.4 bits;  conditional E-value: 1.2e-07
+       MFS_4  87 iRflaGvasAvvlvfgsslvlahaaaarrervgallfaGvGlGiavsgllvllllqlglsasslWlalavlsavllllvalllpraalreasaaaeaak 185
+                 +RflaG asA v  +g+ +v    + +rr++ ++ +f G+ lG +vs ++  +l q +   s+ W a+ v   ++ l ++ llp+  + +a +  e+a 
+  BGC0001720   1 MRFLAGGASASVAAVGAGTVADLWEVKRRGTAMGYFFLGPMLGPLVSPIIGGILTQRFGWRSTQWGAV-VYGGLVWLSMIFLLPE-TSSKAVKGKEPAV 97 
+                 6***********************************************99988888888777778655.5555666666666773.4444444444434 PP
+
+       MFS_4 186 a 186
+                 a
+  BGC0001720  98 A 98 
+                 4 PP
+
+>> PTR2  POT family
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.1   0.1   0.00093       4.2      52     105 ..       7      61 ..       5      95 .. 0.77
+   2 ?    4.9   0.0    0.0021       9.5     322     379 ..     137     194 ..     113     208 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 6.1 bits;  conditional E-value: 0.00093
+                 HHHHHHHHHHCTTT-SS.SSCHHHHHHHHHHHHHHHHHHHHHHHHHHHHCTT-HH CS
+        PTR2  52 giKpnvSafgadqfeek.dprersrfFsiFyfsiNvGSLlsliitpylqenvgyp 105
+                 g  ++v+a+ga  + +  + ++r+    +F+++  +G L+s+ii ++l ++ g+ 
+  BGC0001720   7 GASASVAAVGAGTVADLwEVKRRGTAMGYFFLGPMLGPLVSPIIGGILTQRFGWR 61 
+                 55567777776666554144555557889*************************6 PP
+
+  == domain 2  score: 4.9 bits;  conditional E-value: 0.0021
+                 --TCCCHHHHHHHHHHHHHCCCHHHHHHCTSS-TTTCCCCHHHHHHHHHHHHHHHHHH CS
+        PTR2 322 isvlwlipqylligiselfasiggleffykeapksmkslitglflltnalgnflssvl 379
+                    l++   y+ i+++   +   +++ +++ +p s++ +i gl+ + +alg++++sv+
+  BGC0001720 137 SPPLFMTCYYASISFACYYILNLAIQRTFSRDPYSFRAIILGLLYIPSALGSIVASVV 194
+                 566777778999999999999999999***************************9987 PP
+
+>> BT1  BT1 family
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.2   0.2    0.0023        10     127     171 ..      34      81 ..       4      99 .. 0.79
+   2 ?    3.9   0.4    0.0028        13      40      79 ..     118     157 ..     112     166 .. 0.90
+   3 ?   -0.5   0.1     0.062   2.8e+02     129     151 ..     180     202 ..     172     207 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 4.2 bits;  conditional E-value: 0.0023
+         BT1 127 SwiwlvsavGgiiasvlsGpLldag...ktrisvlvsaalqlltvvvf 171
+                  + +l  ++G +++ +++G+L++ +   +t+ + +v + l  l++++ 
+  BGC0001720  34 GYFFLGPMLGPLVSPIIGGILTQRFgwrSTQWGAVVYGGLVWLSMIFL 81 
+                 46667789*************996522278899999999999999983 PP
+
+  == domain 2  score: 3.9 bits;  conditional E-value: 0.0028
+         BT1  40 ikpltallsDgfallGytkrwYlvvscllgaafallygll 79 
+                  k+l  +l   f l+Gy + + l++ c  ++++  +y +l
+  BGC0001720 118 FKALGRMLVEPFRLVGYLRSPPLFMTCYYASISFACYYIL 157
+                 699999**************************99888766 PP
+
+  == domain 3  score: -0.5 bits;  conditional E-value: 0.062
+         BT1 129 iwlvsavGgiiasvlsGpLldag 151
+                 +++ sa+G+i+asv++G  +d +
+  BGC0001720 180 LYIPSALGSIVASVVGGRWTDYV 202
+                 5677999*********9887765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (350 residues searched)
+Target model(s):                       17929  (3044345 nodes)
+Passed MSV filter:                       410  (0.022868); expected 358.6 (0.02)
+Passed bias filter:                      235  (0.0131073); expected 358.6 (0.02)
+Passed Vit filter:                        30  (0.00167327); expected 17.9 (0.001)
+Passed Fwd filter:                         5  (0.000278878); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.58u 2.56s 00:00:03.14 Elapsed: 00:00:02.96
+# Mc/sec: 359.97
+//
+Query:       BGC0001720  [L=741]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    9.3e-09   34.7   0.1    2.3e-08   33.4   0.0    1.7  2  Fungal_trans  Fungal specific transcription factor domain
+    0.00067   19.7  14.9     0.0016   18.5  14.9    1.6  1  Zn_clus       Fungal Zn(2)-Cys(6) binuclear cluster domain
+
+
+Domain annotation for each model (and alignments):
+>> Fungal_trans  Fungal specific transcription factor domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.4   0.0   2.6e-12   2.3e-08       3     188 ..     235     418 ..     233     492 .. 0.85
+   2 ?   -2.2   0.0      0.19   1.7e+03     217     249 ..     587     636 ..     574     665 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 33.4 bits;  conditional E-value: 2.6e-12
+  Fungal_trans   3 rffsnfhpqfpilhkpsflpkt..ssenssksayaspllllailalGalfsesetkesnssltsesqefiafplraeili............hedfs 85 
+                   +f+  + p+fpi+ +  f   +   +      +  + +l++ + alG +++e + +      +       ++p +a+  +            ++d s
+    BGC0001720 235 LFWMSLAPLFPIMPESEFEALYaaDGPYLLGQRTIEGALINGMTALGIQCAEATGSGA----RIL----SCSPTAASRSSieyfrrcrdvlrDQDTS 323
+                   79*************9999999876666667788899999*********999999886....332....2444444444446666667777899999 PP
+
+  Fungal_trans  86 spssslwilqsLlllelyektssdralherhhgvavrlarslgLhrnpsyvgkkslwklweeeaesrrRlwwaaFylDktialklGrppllddsqin 182
+                   + ++ ++++ ++ ll ly++     ++++++ g+ vr a+  ++h  p+  +       ++  a  r R+ww   +lD++++l+lGrp     s+  
+    BGC0001720 324 TTTC-VHTIRCYILLTLYHLQANQLEKAYYLAGLGVRRAHMGRFHLTPAAHS-------SARVADDRIRVWWLLSWLDVYCSLQLGRPAAVQRSSNP 412
+                   9999.*********************************************98.......555589999********************977888888 PP
+
+  Fungal_trans 183 lpLPcd 188
+                   +p P +
+    BGC0001720 413 CPPPSS 418
+                   887765 PP
+
+  == domain 2  score: -2.2 bits;  conditional E-value: 0.19
+  Fungal_trans 217 iasfllaLkkilskiagsllsiekqlqqrdlq..................s 249
+                    +s++++ +++ls +++ ++s++  l++  ++                  s
+    BGC0001720 587 AESAFSRACSVLSMLHS-IYSRSDILDRLTMVlpfiwnaiitiaayvfvgS 636
+                   56667777777777777.888887777766665544444444444444443 PP
+
+>> Zn_clus  Fungal Zn(2)-Cys(6) binuclear cluster domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.5  14.9   1.8e-07    0.0016       1      35 [.      42      73 ..      42      78 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 18.5 bits;  conditional E-value: 1.8e-07
+                SS-HHHHHCT---STSSSS-HHHHHCTHHHCCCCT CS
+     Zn_clus  1 haCdnCrkkKvKCdakkPaCsnCkklnleCtfyse 35
+                +aC +Cr++++KC+ +kP C  C+ +n++C+  +e
+  BGC0001720 42 RACRRCRQHRIKCS-EKP-CEPCRANNSKCV-WTE 73
+                69***********8.68*.***********9.433 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (741 residues searched)
+Target model(s):                       17929  (3044345 nodes)
+Passed MSV filter:                       708  (0.0394891); expected 358.6 (0.02)
+Passed bias filter:                      438  (0.0244297); expected 358.6 (0.02)
+Passed Vit filter:                        31  (0.00172904); expected 17.9 (0.001)
+Passed Fwd filter:                         2  (0.000111551); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.50u 2.87s 00:00:03.37 Elapsed: 00:00:03.08
+# Mc/sec: 732.42
+//
+Query:       BGC0001720  [L=427]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+    8.3e-27   94.3   0.0    1.4e-26   93.6   0.0    1.3  1  FAD_binding_3   FAD binding domain
+    1.3e-11   44.7   3.8    3.7e-06   26.8   0.4    2.2  2  DAO             FAD dependent oxidoreductase
+    5.6e-09   35.6   2.7    1.2e-07   31.2   0.2    2.3  2  FAD_binding_2   FAD binding domain
+    7.7e-09   35.2   0.8     0.0014   17.9   0.1    2.2  2  Pyr_redox_2     Pyridine nucleotide-disulphide oxidoreductase
+    9.8e-08   32.5   0.0     0.0074   16.8   0.0    2.5  2  Pyr_redox       Pyridine nucleotide-disulphide oxidoreductase
+      3e-06   26.2   0.1    0.00097   17.9   0.1    2.1  2  HI0933_like     HI0933-like protein
+    1.2e-05   25.4   0.1    3.2e-05   24.1   0.1    1.7  1  NAD_binding_8   NAD(P)-binding Rossmann-like domain
+    2.7e-05   23.4   0.2      0.034   13.2   0.0    2.2  2  Lycopene_cycl   Lycopene cyclase protein
+    0.00087   18.5   0.1     0.0018   17.4   0.1    1.5  2  GIDA            Glucose inhibited division protein A
+     0.0016   17.8   0.9     0.0027   17.1   0.9    1.5  1  FAD_oxidored    FAD dependent oxidoreductase
+  ------ inclusion threshold ------
+      0.012   14.9   0.0       0.36   10.0   0.0    2.2  2  Pyr_redox_3     Pyridine nucleotide-disulphide oxidoreductase
+      0.018   13.9   0.0      0.042   12.7   0.0    1.6  2  Trp_halogenase  Tryptophan halogenase
+      0.028   13.7   0.0      0.049   12.9   0.0    1.4  1  AlaDh_PNT_C     Alanine dehydrogenase/PNT, C-terminal domain
+       0.11   11.7   0.3       0.54    9.5   0.0    2.0  2  Amino_oxidase   Flavin containing amine oxidoreductase
+
+
+Domain annotation for each model (and alignments):
+>> FAD_binding_3  FAD binding domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   93.6   0.0   1.1e-29   1.4e-26       5     348 ..      11     363 ..       8     364 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 93.6 bits;  conditional E-value: 1.1e-29
+                    EEE--SHHHHHHHHHHHHTTHHEEEEESSSSSCCSSS--EEEHHHHHHHHHTT-HHHHHHHSEECCCCEEEEEEE...CCCCCEEEEEHHCHHCST CS
+  FAD_binding_3   5 lIVGaGpaGlmlallLseaGvrvvlvekrsttvvlpradglnqrtmellrqlGledrilaegapnelmgealyne...lsdtpkaradlelesspe 97 
+                    +++G+G+aGl++a   +  G r++l+ek  +  + + +  l++ + +llr  G+ d++++++      +   y     ls+     + +  +s++ 
+     BGC0001720  11 VVIGGGLAGLSAAIATRLEGHRCTLLEKAPEFNEVGAGLQLTPNSTRLLRRWGVLDKLRSKAGIPTQLTVRRYDGskvLSRADGWDETM--QSQYD 104
+                    79***********************************************************9777777777777733333333333333..44444 PP
+
+                    -C.EE--HHHHHHHHHHHHHHHTEEETCSEEEECCEECCCCCCCEEEECCTTEEEEEEEEEEEE--GTT-HHHHHH....TGG.EEEEEEEE..EE CS
+  FAD_binding_3  98 rv.tvypqteleriLvehaeerglqvrfktevesleqdeegvtaevrdketgeeetvrakYlvGaDGgrStvrktl....gie.fegeetvy..ea 185
+                    ++  ++   +l+ ++v++a+  g++vr ++eves+  d++gv+  +     g++e+++ + + +aDG +S++r++l    g+   ++ +  y  ++
+     BGC0001720 105 APfWDMHRADLQAAMVARARHLGVDVRTGAEVESI--DTDGVAVILA----GTRERLQGDVVLAADGLWSRTRAALfpdlGTApQPTGDLAYriIL 194
+                    4415678899999********************55..7778777665....56789*****************98622214442222222221134 PP
+
+                    EEEEEEEEC-SCCCTTC...CEEEEECCTTEEEEEECCE.TEEEEEEEEECCE-GGGSCCCHHHHHHHHHHHHHHT.TSSCEEEEEEEEEEEEEEE CS
+  FAD_binding_3 186 gvldvlfdadlsdivep...lvlilsaesrgvmviPlen.tlerfyvqvearaekeersekfteeevkarlreivg.ektldveieevsawtvaqr 276
+                    ++ ++  d +l+++v++   +++++++   +    +++   + + +++++ + +++  + + + ee++ar +       ++  +++ v++w++ ++
+     BGC0001720 195 RLENLQHDPELAAWVAKptvNFWVGADAHAV--AYSVRGgSELNLVLLCPDDLPEGCARAQADLEEMRARFQGWDPlLCRFLDNVKTVEKWRLMHM 288
+                    4445555557777777789889999888886..5555555678899**********99*********99987643313445556666666655444 PP
+
+                    ...EESSSEETTEEE-GGGTEEE-STTSHHHHHHHHHHHHHHHHHHHHHTTSS-GGGGHHHHHHHHHHHHHHHHH CS
+  FAD_binding_3 277 ...vaekyrkgrvflaGDAaHihpPtgGqGlNtaiqDavnLawkLaavlkGeAkeelLdtYeeerravaqavvdf 348
+                          + ++g   +aGD++H + P  +qG N+a++D   L++ L++  + ++ +++L  Y+e r+ +++++ ++
+     BGC0001720 289 pslPKWNHESGYFTMAGDSCHPMLPYLAQGANSAMEDGAVLGRLLGSIHEASRIPDVLAVYQEIRKVRVEKIAKQ 363
+                    200445556678889*****************************************************9999876 PP
+
+>> DAO  FAD dependent oxidoreductase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.1   0.3     6e-07   0.00077       1      33 [.       9      43 ..       9      50 .. 0.89
+   2 !   26.8   0.4   2.9e-09   3.7e-06     117     269 ..      84     244 ..      47     318 .. 0.58
+
+  Alignments for each domain:
+  == domain 1  score: 19.1 bits;  conditional E-value: 6e-07
+                EEEEECTSHHHHHHHHHHHHTT..EEEEESSSSTT CS
+         DAO  1 dvviiGGGiiGlstAyeLarrg..Vtllekgdiag 33
+                ++v+iGGG +Gls+A +   +g   tllek++++ 
+  BGC0001720  9 HLVVIGGGLAGLSAAIATRLEGhrCTLLEKAPEFN 43
+                68****************87889********9887 PP
+
+  == domain 2  score: 26.8 bits;  conditional E-value: 2.9e-09
+                 EHHHHHHHSTTSTTTSEEEEETTEEEEEHHHHHHHHHHHHHHTT-EEEESECEEEEEEEETCEEEEE.EECTEEE.E.EEEEEEE--GGGHH.HHHTTC CS
+         DAO 117 daeevrelepalpgllgalfypdtgqvdpakltaalaraaealGveilegtevtgleeedgkvwgve.rttpgen.d.aadavVnaaGawsd.llgllk 211
+                 d+++v+ ++ + ++++ + ++   + ++ a l aa+ ++a+ lGv++++g+ev++++ +   ++ v      g++ + + d v  a G+ws+  ++l++
+  BGC0001720  84 DGSKVLSRADGWDETMQSQYDAPFWDMHRADLQAAMVARARHLGVDVRTGAEVESIDTD---GVAVIlA---GTReRlQGDVVLAADGLWSRtRAALFP 176
+                 44455555544334555555555588999***************************553...3333333...333112336677777****97554447 PP
+
+                 TT...TSEE.EEEEEEEEEEEECCTHSTGSG.CSEEEEE.EEETTTTEEEEEETTS....EEEEEESS CS
+         DAO 212 el...dlpi.spvrgqvlvlkplseklvspa.ailpvpe.tdddgrgvyvtprkdg....rvlvGgta 269
+                 +l   ++p+   +   +l+l++l+  ++ +a    p+   ++  + +  ++  ++g     vl+++++
+  BGC0001720 177 DLgtaPQPTgDLAYRIILRLENLQHDPELAAwVAKPTVNfWVGADAHAVAYSVRGGselnLVLLCPDD 244
+                 77543344334477777888887776555543444433354444444444443333222146667755 PP
+
+>> FAD_binding_2  FAD binding domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.2   0.2   9.1e-11   1.2e-07       2      35 ..      10      43 ..       9      47 .. 0.95
+   2 ?    4.5   0.3     0.012        15     140     228 ..     112     187 ..      45     225 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 31.2 bits;  conditional E-value: 9.1e-11
+                   EEEE--SHHHHHHHHHHHHTTT-EEEEESSSGGG CS
+  FAD_binding_2  2 viViGsGlAGLaAAleaaeaGlkvavvekeqefg 35
+                   ++ViG+GlAGL+AA++ + +G++++++ek++ef+
+     BGC0001720 10 LVVIGGGLAGLSAAIATRLEGHRCTLLEKAPEFN 43
+                   79****************************9986 PP
+
+  == domain 2  score: 4.5 bits;  conditional E-value: 0.012
+                    HHHHHHHHHHHHHTCTEEEEESEEEEEEEECTTEEEEEEEEETTTTCEEEEEESEEEE-----GG..........GSSSBSSGTT-S-H CS
+  FAD_binding_2 140 ghallarlvesarkagvdfqerteadeLivedgrvtGavvenpesgrevrirakavvlatgGfgrallkellgaaaeaettnapavtGd 228
+                       l a++v++ar++gvd+++ +e++++ +  +   G+ v     g+++r++ + v+ a g ++r      ++aa + +  +ap+ tGd
+     BGC0001720 112 RADLQAAMVARARHLGVDVRTGAEVESIDT--D---GVAVI--LAGTRERLQGDVVLAADGLWSR------TRAALFPDLGTAPQPTGD 187
+                    4568999*********************33..3...33333..2355566666666666666665......455555555566666665 PP
+
+>> Pyr_redox_2  Pyridine nucleotide-disulphide oxidoreductase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.9   0.1   1.1e-06    0.0014       2      35 ..       9      42 ..       8      70 .. 0.82
+   2 !   15.5   0.1   5.9e-06    0.0076     191     254 ..     110     172 ..      98     188 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 17.9 bits;  conditional E-value: 1.1e-06
+                 SEEEE--SHHHHHHHHHHHHHTS-EEEEETTHCH CS
+                 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  Pyr_redox_2  2 dvvviGgGpAGlaaaltlaqagakvtlvelegtc 35
+                 ++vviGgG AGl+aa+  +  g++ tl+e+  ++
+   BGC0001720  9 HLVVIGGGLAGLSAAIATRLEGHRCTLLEKAPEF 42
+                 589************************9854444 PP
+
+  == domain 2  score: 15.5 bits;  conditional E-value: 5.9e-06
+                  TS-HHHHHHHHHHHHHTTEEEEESCEEEEEEETTEEEE.EEETTSCEEEESEEEE-S-EEES-HH CS
+                  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxx RF
+  Pyr_redox_2 191 aldkelsaaaeealekeGvevklgtsvkeidgngekle.vvledgteidadlvvvavGvrpstel 254
+                  ++  +l+aa+ ++ ++ Gv+v++g++v+ id +g        ++ ++++ d v+ a G+  +t+ 
+   BGC0001720 110 MHRADLQAAMVARARHLGVDVRTGAEVESIDTDGV--AvILAGTRERLQGDVVLAADGLWSRTRA 172
+                  56778899999999999**************9997..6255566666*********999777765 PP
+
+>> Pyr_redox  Pyridine nucleotide-disulphide oxidoreductase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.8   0.0   5.8e-06    0.0074       1      36 [.       9      45 ..       9      65 .. 0.83
+   2 !   12.9   0.0   9.7e-05      0.12      41      76 ..     114     146 ..     106     152 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 16.8 bits;  conditional E-value: 5.8e-06
+                EEEEECSSHHHHHHHHHHHHTTSEEEEEESSSSSS.T CS
+   Pyr_redox  1 kvvvvGgGyiglElAgalaelgkkVtvversdkll.r 36
+                ++vv+GgG+ gl +A a +  g++ t++e ++++   
+  BGC0001720  9 HLVVIGGGLAGLSAAIATRLEGHRCTLLEKAPEFNeV 45
+                79*****************************999744 PP
+
+  == domain 2  score: 12.9 bits;  conditional E-value: 9.7e-05
+                 HHHHHHHHHHHHTTEEEECSEEEEEEEEETTSEEEE CS
+   Pyr_redox  41 easkilqeklekngievllntkveeiegsedgvesv 76 
+                 ++++++  + +++g++v+++++ve+i++++     v
+  BGC0001720 114 DLQAAMVARARHLGVDVRTGAEVESIDTDGVA---V 146
+                 788999*********************98864...4 PP
+
+>> HI0933_like  HI0933-like protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.9   0.1   7.5e-07   0.00097       2      35 ..       9      42 ..       8      47 .. 0.93
+   2 !    6.0   0.0    0.0031         4     109     163 ..     113     165 ..     106     181 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 17.9 bits;  conditional E-value: 7.5e-07
+                 SEEEE--SHHHHHHHHHHHHTT--EEEE-SSSSS CS
+  HI0933_like  2 dviviGgGaAGlmaAisaakrgkrVlllekakkl 35
+                 +++viGgG AGl aAi+ + +g+r +lleka+++
+   BGC0001720  9 HLVVIGGGLAGLSAAIATRLEGHRCTLLEKAPEF 42
+                 579***************************9876 PP
+
+  == domain 2  score: 6.0 bits;  conditional E-value: 0.0031
+                  HHHHHHHHHHHHHHT-EEE-S--EEEEECETTE.EEEEE.TTEEEEESEEEE--- CS
+  HI0933_like 109 edivdallkelkeagvklrletevksvekeedgkfrvktkseeeleadklvlAtG 163
+                  +d+  a+++++++ gv++r+  ev+s+  ++dg+  + + ++e+l+ d ++ A G
+   BGC0001720 113 ADLQAAMVARARHLGVDVRTGAEVESI--DTDGVAVILAGTRERLQGDVVLAADG 165
+                  56778999*******************..55665555555788888888777766 PP
+
+>> NAD_binding_8  NAD(P)-binding Rossmann-like domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.1   0.1   2.5e-08   3.2e-05       1      30 [.      12      41 ..      12      43 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 24.1 bits;  conditional E-value: 2.5e-08
+                   EE--SHHHHHHHHHHHCCTEEEEEE-SSSS CS
+  NAD_binding_8  1 IvGaGlsGlvaAylLakagfdvlllekrdr 30
+                   ++G+Gl+Gl+aA + + +g++++llek++ 
+     BGC0001720 12 VIGGGLAGLSAAIATRLEGHRCTLLEKAPE 41
+                   8**************************985 PP
+
+>> Lycopene_cycl  Lycopene cyclase protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.0   0.2     0.001       1.3       2      34 ..      10      40 ..       9      47 .. 0.74
+   2 !   13.2   0.0   2.6e-05     0.034      71     171 ..      97     205 ..      87     209 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 8.0 bits;  conditional E-value: 0.001
+  Lycopene_cycl  2 vvviGaGpAglslAarlteakpglkvvlieasp 34
+                   +vviG+G+Agls A        g + +l+e +p
+     BGC0001720 10 LVVIGGGLAGLSAAIAT--RLEGHRCTLLEKAP 40
+                   79*********866544..44666777776665 PP
+
+  == domain 2  score: 13.2 bits;  conditional E-value: 2.6e-05
+  Lycopene_cycl  71 dgkkillgraYgrvsskrlkeellerlvengvk.lleakvesveeeeageslvvleggr.kirarlvvdarglaslk.........karrlglQtf 155
+                    +  + + + ++  +++++l++ +  r  + gv  ++ a ves+  + +    v+l+g r ++++ +v+ a gl s++          a++     +
+     BGC0001720  97 ETMQSQYDAPFWDMHRADLQAAMVARARHLGVDvRTGAEVESIDTDGV---AVILAGTReRLQGDVVLAADGLWSRTraalfpdlgTAPQPTGDLA 189
+                    4555666788999**************988887256799****99999...8899998889***********999999999999988888888999 PP
+
+  Lycopene_cycl 156 yGvevevdnppfdldk 171
+                    y + ++++n ++d++ 
+     BGC0001720 190 YRIILRLENLQHDPEL 205
+                    9999999999999976 PP
+
+>> GIDA  Glucose inhibited division protein A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.4   0.1   1.4e-06    0.0018       2      30 ..      10      40 ..       9      60 .. 0.84
+   2 ?   -3.5   0.0       3.3   4.2e+03      58     112 ..     328     372 ..     304     388 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 17.4 bits;  conditional E-value: 1.4e-06
+                EEEE-SSHHHHHHHHHHHHTT--EEEE..ES CS
+        GIDA  2 viViGgGhAGceAAlaaarlGakvlLi..th 30
+                ++ViGgG+AG+ AA+a+   G++ +L+  ++
+  BGC0001720 10 LVVIGGGLAGLSAAIATRLEGHRCTLLekAP 40
+                69***********************995533 PP
+
+  == domain 2  score: -3.5 bits;  conditional E-value: 3.3
+                 HHT-SHHHHHHHHEEEEEEESTTS-CCC-EEEEEE-HHHHHHHHHHHHHTSTTEE CS
+        GIDA  58 alggliikaadkagiqfrilNrskGpavralraqvdrelyskevteklenepnle 112
+                  lg l++++ ++++i          p v a    + + +++k  +++l++  n +
+  BGC0001720 328 VLGRLLGSIHEASRI----------PDVLAVYQEIRKVRVEKIAKQALKQRYNFH 372
+                 566666666666666..........888888888888888888888888877765 PP
+
+>> FAD_oxidored  FAD dependent oxidoreductase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.1   0.9   2.1e-06    0.0027       2      32 ..      10      40 ..       9     166 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 17.1 bits;  conditional E-value: 2.1e-06
+  FAD_oxidored  2 vvVvGGgpaGvaAAiaAaraGakvlLveerg 32
+                  +vV+GGg+aG+ AAia   +G +  L+e+ +
+    BGC0001720 10 LVVIGGGLAGLSAAIATRLEGHRCTLLEKAP 40
+                  69**************************876 PP
+
+>> Pyr_redox_3  Pyridine nucleotide-disulphide oxidoreductase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.0   0.0   0.00028      0.36       1      30 [.      11      39 ..      11      60 .. 0.89
+   2 ?    2.5   0.0     0.055        71      91     139 ..     123     171 ..     101     179 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 10.0 bits;  conditional E-value: 0.00028
+  Pyr_redox_3  1 iIiGaGPaGlaaaielkkagledylilEkg 30
+                 ++iG+G aGl+aai+ +  g  + + lEk+
+   BGC0001720 11 VVIGGGLAGLSAAIATRLEGH-RCTLLEKA 39
+                 79*****************99.79999997 PP
+
+  == domain 2  score: 2.5 bits;  conditional E-value: 0.055
+  Pyr_redox_3  91 aksfelpiklfeeVesvkkedegfevetsketyeAkkviiAtGefdkPn 139
+                  a++  +++++  eVes++ ++   ++  ++e ++ + v+ A G +++ +
+   BGC0001720 123 ARHLGVDVRTGAEVESIDTDGVAVILAGTRERLQGDVVLAADGLWSRTR 171
+                  677888999***************************9999999887655 PP
+
+>> Trp_halogenase  Tryptophan halogenase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.7   0.0   3.3e-05     0.042       2      61 ..      10      67 ..       9      86 .. 0.83
+   2 ?   -2.3   0.0       1.1   1.5e+03     385     399 ..     100     114 ..      97     165 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 12.7 bits;  conditional E-value: 3.3e-05
+                    EEEE--SHHHHHHHHHHHHHTTTSSEEEEEE-.SSS---SS-EE--THHHHTHHHHT--HH CS
+  Trp_halogenase  2 ivivGGGtaGwlaAaalakalkgklevtlves.eeigtvgvGeatipsirkllrlLgidee 61
+                    +v++GGG aG  aA+a +  +   ++ tl+e+ +e+  vg G  ++p+   llr+ g+ ++
+      BGC0001720 10 LVVIGGGLAGLSAAIATRLEG---HRCTLLEKaPEFNEVGAGLQLTPNSTRLLRRWGVLDK 67
+                    79*********9998877666...99****97479*************9999999999876 PP
+
+  == domain 2  score: -2.3 bits;  conditional E-value: 1.1
+                     ----SSHHHHHHCTS CS
+  Trp_halogenase 385 tkredtpfWralrel 399
+                      ++ d+pfW+  r+ 
+      BGC0001720 100 QSQYDAPFWDMHRAD 114
+                     556677777776632 PP
+
+>> AlaDh_PNT_C  Alanine dehydrogenase/PNT, C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.9   0.0   3.9e-05     0.049      21      62 ..       2      41 ..       1      50 [. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 3.9e-05
+                 CEETCB---EEEEESTSHHHHHHHHHHHHTT-EEEEEESSHH CS
+  AlaDh_PNT_C 21 GgvpgvepakvlviGgGvaGlqAiatakglgakVtvlDvrpa 62
+                 G ++  ep + +viGgG aGl+A+ + +  g + t+l++ p+
+   BGC0001720  2 GSIR--EPLHLVVIGGGLAGLSAAIATRLEGHRCTLLEKAPE 41
+                 6666..78999***********99877777778887777665 PP
+
+>> Amino_oxidase  Flavin containing amine oxidoreductase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.4   0.1      0.42   5.4e+02       1      22 [.      17      38 ..      17      42 .. 0.90
+   2 ?    9.5   0.0   0.00042      0.54     181     259 ..      66     163 ..      44     179 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: -0.4 bits;  conditional E-value: 0.42
+                   HHHHHHHHHHHHTTEEEEEEES CS
+  Amino_oxidase  1 laGLaaArqLlsaGfdVtvlEa 22
+                   laGL+aA      G+++t+lE 
+     BGC0001720 17 LAGLSAAIATRLEGHRCTLLEK 38
+                   79*******************7 PP
+
+  == domain 2  score: 9.5 bits;  conditional E-value: 0.00042
+                    TTCBHHHHTCCCCHHHHHTSCCCEE.....................TTHTHHHHHHHHH..TTTTEEEETSEEEEEEEEETTCEEEEETTSTEE.E CS
+  Amino_oxidase 181 selsaklalpllwelegfggslllp.....................rgGlsqlpealae..elrgldirlntrVkeikregdgvtvtledgevv.e 252
+                    ++l +k+ +p+++ +  ++gs +l                      r   + l  a+ +  + +g+d+r++++V +i++  dgv+v l   +++ +
+     BGC0001720  66 DKLRSKAGIPTQLTVRRYDGSKVLSradgwdetmqsqydapfwdmhR---ADLQAAMVAraRHLGVDVRTGAEVESIDT--DGVAVILAGTRERlQ 156
+                    66667777777777777777766667666666666655555554433...45666666677799***************..777777776666668 PP
+
+                    ESEEEE- CS
+  Amino_oxidase 253 aDaVvvT 259
+                    +D V+ +
+     BGC0001720 157 GDVVLAA 163
+                    8877654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (427 residues searched)
+Target model(s):                       17929  (3044345 nodes)
+Passed MSV filter:                       621  (0.0346366); expected 358.6 (0.02)
+Passed bias filter:                      564  (0.0314574); expected 358.6 (0.02)
+Passed Vit filter:                        58  (0.00323498); expected 17.9 (0.001)
+Passed Fwd filter:                        14  (0.000780858); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):              14  [number of targets reported over threshold]
+# CPU time: 0.59u 2.85s 00:00:03.44 Elapsed: 00:00:03.13
+# Mc/sec: 415.31
+//
+Query:       BGC0001720  [L=590]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    4.9e-43  145.9   2.4    4.9e-43  145.9   2.4    2.2  2  Cu-oxidase_3  Multicopper oxidase
+    3.1e-39  133.8   8.9    9.3e-37  125.8   0.5    3.6  3  Cu-oxidase_2  Multicopper oxidase
+    5.4e-36  124.1   0.0    2.1e-35  122.2   0.0    2.1  2  Cu-oxidase    Multicopper oxidase
+
+
+Domain annotation for each model (and alignments):
+>> Cu-oxidase_3  Multicopper oxidase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  145.9   2.4   8.2e-47   4.9e-43       2     117 ..      80     194 ..      79     196 .. 0.96
+   2 ?   -2.2   0.1      0.68   4.1e+03      82     108 ..     520     545 ..     514     551 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 145.9 bits;  conditional E-value: 8.2e-47
+                   EEEEEEECTTEESEEEEEECTSSBS-EEEEETT-EEEEEEEE-S.SS-B-EEEET--S-GG.....GSCSGGG-B-TT-EEEEEEE--S-SEEEEEE CS
+  Cu-oxidase_3   2 vtektvsplggterevitvNgqfpgptievregdtvvvnvtNkl.dentsihwhGlqqrktswmDGvpgvtqcpiqpgesftyrftvkqqagtlwYh 97 
+                   v++ t++p+g++ ++v+++N ++pgp ie+++gd+vv++vtN++ +++t+ihwhG++q +++ +DGvpgvtqcpi+pg s+tyr++++q +gt wYh
+    BGC0001720  80 VENITMAPDGYE-QHVLAINRSIPGPLIEANWGDEVVIHVTNNMeRNGTAIHWHGIRQLNNNAHDGVPGVTQCPIPPGGSYTYRWKAEQ-YGTSWYH 174
+                   577889999999.*******************************8899*****************************************.******* PP
+
+                   E--TTHHHTT-EEEEEEE-H CS
+  Cu-oxidase_3  98 shlslqqaaGlaGaiiiedk 117
+                   sh+slq+  Gl G++ii+ +
+    BGC0001720 175 SHFSLQYSVGLQGPMIIHGP 194
+                   *****************987 PP
+
+  == domain 2  score: -2.2 bits;  conditional E-value: 0.68
+                   EEEEE--S-SEEEEEEE--TTHHHTT- CS
+  Cu-oxidase_3  82 tyrftvkqqagtlwYhshlslqqaaGl 108
+                   ++ ++ ++  g  + h h++++  +Gl
+    BGC0001720 520 VFAYKTDN-PGAWLIHCHIAWHSSQGL 545
+                   55666666.888889999999888886 PP
+
+>> Cu-oxidase_2  Multicopper oxidase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.4   2.4   0.00028       1.7      36     132 ..     107     190 ..      81     193 .. 0.68
+   2 ?   -0.5   0.0      0.15   9.2e+02      31      73 ..     258     301 ..     225     333 .. 0.69
+   3 !  125.8   0.5   1.6e-40   9.3e-37       3     136 ..     427     554 ..     425     555 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 8.4 bits;  conditional E-value: 0.00028
+                   EEETTEEEEEEEEE-SSS.-EEEEESS-EEEEEEEEECCCCCCTCCSSGCCGSSCB.SEEEE-TTEEEEEEEES.S-EEEEEEESSHHHHHTT-EEE CS
+  Cu-oxidase_2  36 tlpkgevveiviqnntkl.pHPfHlHGhdfqvlgrgpgndpeedpksynlenpvrr.dtvqvppggwvairfkadnpGvwllHCHilwHldqGmalq 130
+                   +++ g+ v i ++nn +     +H+HG +   l+++              ++ v       +ppgg  ++r+ka++ G   +H+H+    + G+ + 
+    BGC0001720 107 EANWGDEVVIHVTNNMERnGTAIHWHGIRQ--LNNN-------------AHDGVPGvTQCPIPPGGSYTYRWKAEQYGTSWYHSHFSLQYSVGLQGP 188
+                   555545455555444444366788888732..2222.............23333330335799**********************998888887776 PP
+
+                   EE CS
+  Cu-oxidase_2 131 fv 132
+                   ++
+    BGC0001720 189 MI 190
+                   65 PP
+
+  == domain 2  score: -0.5 bits;  conditional E-value: 0.15
+                   SSEEEEEETTEEEEEEEEE-SSS.-EEEEESS-EEEEEEEEECC CS
+  Cu-oxidase_2  31 ntnvitlpkgevveiviqnntkl.pHPfHlHGhdfqvlgrgpgn 73 
+                   +++  +++kg++ ++ + n++   +  f ++Gh+  v++++  +
+    BGC0001720 258 ERSEWHFEKGKRYRMRLVNTGLYsNFRFAIDGHNLTVIANDFVP 301
+                   66667778888889999998888777788999999999888777 PP
+
+  == domain 3  score: 125.8 bits;  conditional E-value: 1.6e-40
+                   S-SCCCCCCCEEEEEEEEEEEETCCTTTSSEEEEEET..TEEEEEEEEE-SSS..-EEEEESS-EEEEEEEEECCCCCCTCCSSGCCGSSCBSEEEE CS
+  Cu-oxidase_2   3 ppklptllqltsgneeaseitngeefsentnvitlpk..gevveiviqnntkl..pHPfHlHGhdfqvlgrgpgndpeedpksynlenpvrrdtvqv 95 
+                   ++++pt l ++++        + ++f++n   +++p   +++v+iv+++ ++    HP+HlHGhdf++lg+g+gn   ++ + ++l+np+rrdt++ 
+    BGC0001720 427 DWSKPTNLLVAEN--------DTTIFPPNYLLYHTPDgpNQWVYIVFNDISERnrSHPMHLHGHDFFLLGTGEGN--FTKDSPLQLKNPPRRDTASW 513
+                   6777777777732........3459************9***********8877789*******************..666677888*********** PP
+
+                   -TTEEEEEEEES.S-EEEEEEESSHHHHHTT-EEEEEEECH CS
+  Cu-oxidase_2  96 ppggwvairfkadnpGvwllHCHilwHldqGmalqfvvrpd 136
+                   p+ g+++ ++k+dnpG+wl+HCHi+wH +qG+ +q+++rp+
+    BGC0001720 514 PKRGYMVFAYKTDNPGAWLIHCHIAWHSSQGLGMQMLERPG 554
+                   **************************************986 PP
+
+>> Cu-oxidase  Multicopper oxidase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.3   0.0       1.4   8.6e+03     128     154 ..      73      95 ..      67      98 .. 0.74
+   2 !  122.2   0.0   3.5e-39   2.1e-35       4     158 ..     205     358 ..     202     359 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: -3.3 bits;  conditional E-value: 1.4
+                 SEEEEEEEEGSSSCHHHHTTSEEEEEE CS
+  Cu-oxidase 128 pgnYwivasgrsnlieafengtaaail 154
+                 +++Yw+v+    ++i +   g++ ++l
+  BGC0001720  73 TREYWFVV----ENITMAPDGYEQHVL 95 
+                 67999999....567777777777776 PP
+
+  == domain 2  score: 122.2 bits;  conditional E-value: 3.5e-39
+                 EEEEEEETCBCTTSCBC.HSSCHCHHHHHTT--SEEEETTBSS.......C....TTTTSGGGEEEEETTEEEEEEEESSS-BEEEEETSB-EEEEEET CS
+  Cu-oxidase   4 vitlsDwyhkdakelekellasgkapadtppvpdavlingkggfnatladk....dgaslatltvepgktyrlriinvsaddslnfsIeGHkltVvevD 98 
+                 +++l+Dw h +  ++++ +++   +    pp  ++ lingk+ f +t   +    ++ +  ++++e+gk+yr+r++n+++ +++ f+I+GH+ltV++ D
+  BGC0001720 205 TVMLQDWSHVSPFAMWW-YARVPSG----PPSLSNSLINGKNIFRCTDPLDknclGTGERSEWHFEKGKRYRMRLVNTGLYSNFRFAIDGHNLTVIAND 298
+                 89***************.8887777....999*************995554678877899*************************************** PP
+
+                 CETTSEEEESCEEE-TTEEEEEEEEE-SSSEEEEEEEEGSSSCHHHHTTSEEEEEEEEST CS
+  Cu-oxidase  99 gvyvepvevdsldIavGqrysvlvtanqapgnYwivasgrsnlieafengtaaailryse 158
+                 +v++ep+++d++ I++Gqry+v+v+an++ +nYw++a  ++  ++++    +++i+ry++
+  BGC0001720 299 FVPIEPYTTDNVIISMGQRYDVIVEANAPEDNYWLRAIWQTSCCPNDYANDTLGIIRYDP 358
+                 **************************************888889999***********85 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (590 residues searched)
+Target model(s):                       17929  (3044345 nodes)
+Passed MSV filter:                       365  (0.0203581); expected 358.6 (0.02)
+Passed bias filter:                      304  (0.0169558); expected 358.6 (0.02)
+Passed Vit filter:                        20  (0.00111551); expected 17.9 (0.001)
+Passed Fwd filter:                         3  (0.000167327); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.55u 2.65s 00:00:03.20 Elapsed: 00:00:03.00
+# Mc/sec: 598.72
+//
+Query:       BGC0001720  [L=218]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    2.5e-14   53.4   0.0    4.4e-14   52.7   0.0    1.4  1  GST_N_3   Glutathione S-transferase, N-terminal domain
+    2.5e-13   50.1   0.1    5.3e-13   49.1   0.1    1.6  1  GST_N     Glutathione S-transferase, N-terminal domain
+    2.2e-12   47.0   0.0    3.4e-12   46.4   0.0    1.3  1  GST_C_3   Glutathione S-transferase, C-terminal domain
+    2.2e-09   37.4   0.0    3.6e-09   36.7   0.0    1.3  1  GST_C     Glutathione S-transferase, C-terminal domain
+    5.7e-09   36.1   0.0    1.2e-08   35.1   0.0    1.5  1  GST_N_2   Glutathione S-transferase, N-terminal domain
+    7.7e-08   32.3   0.1    1.3e-07   31.6   0.1    1.3  1  GST_C_2   Glutathione S-transferase, C-terminal domain
+    3.3e-07   31.0   0.0    6.1e-07   30.1   0.0    1.4  1  GST_N_4   Glutathione S-transferase N-terminal domain
+    5.7e-05   23.4   0.0    9.1e-05   22.8   0.0    1.3  1  Tom37     Outer mitochondrial membrane transport complex prot
+  ------ inclusion threshold ------
+      0.013   16.1   0.0      0.022   15.3   0.0    1.4  1  GST_C_5   Glutathione S-transferase, C-terminal domain
+
+
+Domain annotation for each model (and alignments):
+>> GST_N_3  Glutathione S-transferase, N-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   52.7   0.0   2.2e-17   4.4e-14       1      72 [.       9      83 ..       9      92 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 52.7 bits;  conditional E-value: 2.2e-17
+                EES-TTSHHHHHHHHHHHHHT--EEEE---.TTTTHHHHHHH-TT--SSEEETTS-..EEESHHHHHHHHHHHH- CS
+     GST_N_3  1 LygfpaSpyarrvrlaLnekglpvevvevt.pgehdeellaknplgkvPvLeddge..altdSlaIidyLeelyp 72
+                Ly  +  p+ ++v+l+L+e+glp+e+  ++ p+ + e++   np+gk+P+++d++    l++S aIi+yL e+y+
+  BGC0001720  9 LYAHKKGPNPWKVALILEELGLPYETTYLEfPDAKVEPYISLNPNGKLPAIQDPNHsiELFESGAIIEYLIEQYD 83
+                67778889*****************9888769999*****************997735678*************8 PP
+
+>> GST_N  Glutathione S-transferase, N-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   49.1   0.1   2.7e-16   5.3e-13       2      74 ..       6      78 ..       5      80 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 49.1 bits;  conditional E-value: 2.7e-16
+                EEEEESSSTSHTHHHHHHHHHHTT-EEEEEEECSTTTCGGC.HHHHHHCTTS-SSEEEET..TEEEESHHHHHHHH CS
+       GST_N  2 vltlysirgsprahrirlllaakgveyevvpldfeageeks.pellklnplgkvPaLedn..gkkltESraIleYi 74
+                +++ly + + p+++++ l l+++g++ye++ l+f   ++++ + +++lnp+gk+Pa +d+     l+ES+aI eY+
+  BGC0001720  6 PIKLYAHKKGPNPWKVALILEELGLPYETTYLEF---PDAKvEPYISLNPNGKLPAIQDPnhSIELFESGAIIEYL 78
+                789******************************9...88888******************777789*********8 PP
+
+>> GST_C_3  Glutathione S-transferase, C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   46.4   0.0   1.7e-15   3.4e-12      19      94 ..     130     209 ..     113     214 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 46.4 bits;  conditional E-value: 1.7e-15
+                 HHHHHHHHHHHHCHHHHHHHHHHCHGTSSSSTTS--HHHHHHHHHHHHHHHH....TCCCC-HHHHHHHHHHHTSHHHHH CS
+     GST_C_3  19 ekkkefleerlpkflkyfekvlkkkgggylvgdklTyADlalfqvldgleea....ealkkfpklkalyervearpkika 94 
+                   ++efl+ +++++l++++k+l+k gg+yl+g+k++yADla++    +l  +    +  +++p+ +a+ +++++rp++k+
+  BGC0001720 130 VSANEFLTLEIKRVLGVLDKHLAKMGGPYLLGSKVSYADLAFVPHYMMLPLFvpdyDPATEYPHFAAWLAALKERPAVKK 209
+                 56899******************88888***************99999998888654459******************98 PP
+
+>> GST_C  Glutathione S-transferase, C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.7   0.0   1.8e-12   3.6e-09      30      93 .]     139     205 ..     131     205 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 36.7 bits;  conditional E-value: 1.8e-12
+                 HHHHHHHHHHHHHH..TSSSSSTTSSCHHHHHHHHHHHHHHHHTTTTT.TTTSHHHHHHHHHHHTSH CS
+       GST_C  30 kvaevlsaleeelk..kqdylvGdkltlADialvpilnwlqrlglafg.qekfpnlkawlerimarp 93 
+                 ++++vl +l+++l+  +  yl G+k+++AD+a+vp   +l+ ++++ +  +++p+  awl  + +rp
+  BGC0001720 139 EIKRVLGVLDKHLAkmGGPYLLGSKVSYADLAFVPHYMMLPLFVPDYDpATEYPHFAAWLAALKERP 205
+                 789***********9999********************999999999889***********999988 PP
+
+>> GST_N_2  Glutathione S-transferase, N-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.1   0.0   6.1e-12   1.2e-08       3      68 ..      16      79 ..      15      81 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 35.1 bits;  conditional E-value: 6.1e-12
+                HHHHHHHHHHHHCT--EEEEEEH...-TTSHHHHHHHHCTTTSSSEEE-CTTE.EEESHHHHHHHHH CS
+     GST_N_2  3 PwahRvlialalkglediisvvvlepkgfekseefprlnprgtVPvLwdkdgq.vineSseIlryle 68
+                P +++v + l+++gl+++++ +   + ++ k e +  lnp+g++P+++d++ +  + eS +I++yl 
+  BGC0001720 16 PNPWKVALILEELGLPYETTYL---EFPDAKVEPYISLNPNGKLPAIQDPNHSiELFESGAIIEYLI 79
+                889***************9998...334555688****************8886889********95 PP
+
+>> GST_C_2  Glutathione S-transferase, C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.6   0.1   6.4e-11   1.3e-07      11      69 .]     140     200 ..     132     200 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 31.6 bits;  conditional E-value: 6.4e-11
+                 CCHCHHHCTTT--..-SS.CTTCS--HHHHHHHHHHHHHHHHHHS----TT-HHHHHHHHH CS
+     GST_C_2  11 ldaaldaleahLa..dspflfGdqptlaDialapflvrlraagpgfdireaypnlraWler 69 
+                 +++ l +l++hLa  ++p+l+G++ ++aD a+ p++  l    p+ d+  +yp+++aWl++
+  BGC0001720 140 IKRVLGVLDKHLAkmGGPYLLGSKVSYADLAFVPHYMMLPLFVPDYDPATEYPHFAAWLAA 200
+                 78999********55555****************8887744444669***********986 PP
+
+>> GST_N_4  Glutathione S-transferase N-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.1   0.0   3.1e-10   6.1e-07       8      96 ..      35     121 ..      20     124 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 30.1 bits;  conditional E-value: 3.1e-10
+     GST_N_4   8 tyLrmagipyelepssnemhaspkgklPfiel.ngelliadsefiieflkekgvdld...aelseeqkadaralkalveeklynallyerwld 96 
+                 tyL + + ++e     + +   p+gklP i+  n+++++ +s  iie+l+e+  d+d   ++ s ++k+ ara+  l  +  ++++ y  w+ 
+  BGC0001720  35 TYLEFPDAKVEPY--IS-L--NPNGKLPAIQDpNHSIELFESGAIIEYLIEQY-DKDgklSHESLQDKSLARAWLHLQMSAQAPVIGYKVWMG 121
+                 6777777777743..33.3..699******9978888***************9.99954444445889******9999999999999999975 PP
+
+>> Tom37  Outer mitochondrial membrane transport complex protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.8   0.0   4.5e-08   9.1e-05      25      96 ..      49     121 ..      35     126 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 22.8 bits;  conditional E-value: 4.5e-08
+       Tom37  25 slsptgeLPaLkdge.gtwisgfdnIveylrkkseesdlda...slsakekadatAlisllesklaplllyslyvn 96 
+                 sl p+g+LPa++d + + ++ +   I+eyl ++   +d d    + s ++k +a+A+++l  s  ap++ y  ++ 
+  BGC0001720  49 SLNPNGKLPAIQDPNhSIELFESGAIIEYLIEQ---YDKDGklsHESLQDKSLARAWLHLQMSAQAPVIGYKVWMG 121
+                 578**********885666688999******98...44454111666677************************85 PP
+
+>> GST_C_5  Glutathione S-transferase, C-terminal domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.3   0.0   1.1e-05     0.022      37     107 ..     144     209 ..     125     210 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 15.3 bits;  conditional E-value: 1.1e-05
+                 HHHHHHHHCCHTSSSSECCECC--HHHHHHHHHHHHHHHHCCCCCT--CCCT-HHHHHHHHHHCTSHHHHC CS
+     GST_C_5  37 aayledllakhqgeGPyfldkelsmadvavvPflvrlkavlsyyaGydlfakaPrlkklaeaamqraevke 107
+                  + l++ lak    GPy l+ ++s ad+a vP  + l  ++++   yd  +++P + +  +a  +r+ vk+
+  BGC0001720 144 LGVLDKHLAK--MGGPYLLGSKVSYADLAFVPHYMMLPLFVPD---YDPATEYPHFAAWLAALKERPAVKK 209
+                 5566677776..469*****************99887777665...6888888888888888888888875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (218 residues searched)
+Target model(s):                       17929  (3044345 nodes)
+Passed MSV filter:                       264  (0.0147247); expected 358.6 (0.02)
+Passed bias filter:                      242  (0.0134977); expected 358.6 (0.02)
+Passed Vit filter:                        22  (0.00122706); expected 17.9 (0.001)
+Passed Fwd filter:                         9  (0.00050198); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               9  [number of targets reported over threshold]
+# CPU time: 0.53u 2.55s 00:00:03.08 Elapsed: 00:00:02.92
+# Mc/sec: 227.28
+//
+Query:       BGC0001720  [L=305]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    1.8e-05   24.4   0.1    3.6e-05   23.4   0.1    1.4  1  Cupin_2          Cupin domain
+  ------ inclusion threshold ------
+      0.042   13.7   0.0      0.074   12.9   0.0    1.3  1  MannoseP_isomer  Mannose-6-phosphate isomerase
+
+
+Domain annotation for each model (and alignments):
+>> Cupin_2  Cupin domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.4   0.1     4e-09   3.6e-05      11      59 ..      56     105 ..      47     110 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 23.4 bits;  conditional E-value: 4e-09
+                 EEEECSSSEEEEEEEEESEEEEEECTEEEEEETTEEE.EE-TT-EEEEEE CS
+     Cupin_2  11 apshrHpgedeffyVleGegeltvdgeeveleaGdsv.yfpagtpHrfrN 59 
+                  p+h H +++e f V++G++ ++v++++++l++ d v ++pag  Hrf+ 
+  BGC0001720  56 PPPHFHLHQTERFKVIKGRVGIEVNDKVTVLRPKDGVaICPAGNIHRFII 105
+                 579***9999***********************996627899*****975 PP
+
+>> MannoseP_isomer  Mannose-6-phosphate isomerase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.9   0.0   8.3e-06     0.074      80     122 ..      60     103 ..      57     107 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 8.3e-06
+  MannoseP_isomer  80 khhhraehWvvvkGtakvtvddevlllkenestyi.plgaihrl 122
+                       h h++e + v+kG   ++v+d+v++l+ ++ + i p+g+ihr+
+       BGC0001720  60 FHLHQTERFKVIKGRVGIEVNDKVTVLRPKDGVAIcPAGNIHRF 103
+                      699*************************9988766599****95 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (305 residues searched)
+Target model(s):                       17929  (3044345 nodes)
+Passed MSV filter:                       469  (0.0261587); expected 358.6 (0.02)
+Passed bias filter:                      411  (0.0229238); expected 358.6 (0.02)
+Passed Vit filter:                        26  (0.00145016); expected 17.9 (0.001)
+Passed Fwd filter:                         2  (0.000111551); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.64u 2.56s 00:00:03.20 Elapsed: 00:00:02.93
+# Mc/sec: 316.90
+//
+Query:       BGC0001720  [L=169]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+    5.1e-18   65.5   9.9    6.2e-18   65.2   9.9    1.1  1  MARVEL           Membrane-associating domain
+       0.01   15.5   2.7      0.013   15.2   2.7    1.1  1  7TM_GPCR_Srx     Serpentine type 7TM GPCR chemoreceptor Srx
+  ------ inclusion threshold ------
+      0.011   15.6   1.0      0.011   15.6   1.0    1.8  2  DUF485           Protein of unknown function, DUF485
+      0.022   14.1   2.5      0.028   13.8   2.5    1.2  1  Polysacc_synt    Polysaccharide biosynthesis protein
+      0.051   13.8   0.4        0.4   10.9   0.0    2.4  3  Plant_vir_prot   Plant viral movement protein
+        0.1   12.1   5.1       0.13   11.8   5.1    1.1  1  ABC2_membrane_5  ABC-2 family transporter protein
+       0.18   11.1   2.2       0.21   10.8   2.0    1.4  1  Peptidase_U4     Sporulation factor SpoIIGA
+        1.4    9.3   7.5        7.7    6.9   6.8    2.0  1  MgtE             Divalent cation transporter
+        2.3    8.1   6.3        5.2    7.0   0.8    2.2  2  DUF2721          Protein of unknown function (DUF2721)
+
+
+Domain annotation for each model (and alignments):
+>> MARVEL  Membrane-associating domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   65.2   9.9   3.1e-21   6.2e-18       3     142 ..       7     134 ..       5     136 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 65.2 bits;  conditional E-value: 3.1e-21
+      MARVEL   3 lsplgilrilqlvfaiiilgliasliakldqllgspssalnfavfvavfsflyalfllvlylfknsaftsilwplidlivdalaallwlvafialaagl 101
+                 +  ++ilr+++lvfa+i+ g  + ++ +++ ++++++ +  ++ +va++++++al++l++          ++  + ++ +d+++++l+ vaf +l++ +
+  BGC0001720   7 V--SLILRGAELVFAAIVAGVNGEYLRHTR-GIHNNRWRFIYTEVVAALGIFFALIWLIP----------FSSTFTHWPIDFVLSILFWVAFGILVNLV 92 
+                 5..89*********************8887.66666************************..........8999************************* PP
+
+      MARVEL 102 rdisca..fesnqysasltvrcgqaqaavafgflavllfaasa 142
+                 ++ sc+  f++n+  + +++ cg+++a +af+fl+ +lf+as 
+  BGC0001720  93 GS-SCGhvFDWNNVHPVHGDQCGKYKATIAFTFLCAILFLASS 134
+                 **.**955449*****************************985 PP
+
+>> 7TM_GPCR_Srx  Serpentine type 7TM GPCR chemoreceptor Srx
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.2   2.7   6.4e-06     0.013      82     174 ..      44     134 ..      31     145 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 15.2 bits;  conditional E-value: 6.4e-06
+  7TM_GPCR_Srx  82 plshllialNRfcavffplkyekifskkntlliiiiiwiisliistilylpegChllyspetltwsfentpccktiswyldfylnlvlviitl 174
+                   ++++++ al  f+a+++ + +++ f+++   ++++i++ ++++ +++ ++  +C+ +++ +++  + + ++c+k  ++++  +l+++l++++ 
+    BGC0001720  44 IYTEVVAALGIFFALIWLIPFSSTFTHWPIDFVLSILFWVAFG-ILVNLVGSSCGHVFDWNNVHPV-HGDQCGKYKATIAFTFLCAILFLASS 134
+                   68999999999********************************.5678888********9888774.44677766666664445555555554 PP
+
+>> DUF485  Protein of unknown function, DUF485
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.6   1.0   5.6e-06     0.011       9      63 ..      36      89 ..      31      98 .. 0.91
+   2 ?   -1.6   0.3       1.3   2.7e+03      63      72 ..     121     130 ..     115     141 .. 0.54
+
+  Alignments for each domain:
+  == domain 1  score: 15.6 bits;  conditional E-value: 5.6e-06
+      DUF485  9 LvrkrrrfafpltaiflvvYfgfvllvafapdllatkvgegnitvglllgllqiv 63
+                +++ r+rf+ + ++++l+++f+++ l+ f+ ++ + ++   ++++ ++++++++v
+  BGC0001720 36 IHNNRWRFIYTEVVAALGIFFALIWLIPFSSTFTHWPID-FVLSILFWVAFGILV 89
+                5789**************************999999998.799999999999987 PP
+
+  == domain 2  score: -1.6 bits;  conditional E-value: 1.3
+      DUF485  63 vltflltglY 72 
+                 ++tfl ++l+
+  BGC0001720 121 AFTFLCAILF 130
+                 3333333333 PP
+
+>> Polysacc_synt  Polysaccharide biosynthesis protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.8   2.5   1.4e-05     0.028      72     167 ..      39     136 ..      16     142 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 13.8 bits;  conditional E-value: 1.4e-05
+  Polysacc_synt  72 elvslillnvllvllvlvllfllllliaaflglpelavlylilalmllllvgvasfrrglfqglermkyaavsqvveqlsrvilvliavflfld.. 165
+                    ++ + i+ +v+ +l+++++l+ l+++ ++f++ p++ vl +++++++ +lv  +    g + ++++  ++  +q  ++ + +++++++ +lfl+  
+     BGC0001720  39 NRWRFIYTEVVAALGIFFALIWLIPFSSTFTHWPIDFVLSILFWVAFGILVNLVGSSCGHVFDWNNVHPVHGDQCGKYKATIAFTFLCAILFLAss 134
+                    566789999***************************************777777777777779999999999999999999999999999999654 PP
+
+  Polysacc_synt 166 iv 167
+                    + 
+     BGC0001720 135 LI 136
+                    43 PP
+
+>> Plant_vir_prot  Plant viral movement protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.1   0.1      0.55   1.1e+03       6      23 ..      45      62 ..      44      73 .. 0.70
+   2 ?   -1.7   0.0       1.8   3.5e+03      14      25 ..      78      89 ..      68     118 .. 0.51
+   3 ?   10.9   0.0    0.0002       0.4      12      53 ..     128     166 ..     117     168 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: -0.1 bits;  conditional E-value: 0.55
+  Plant_vir_prot  6 yskvvlavalglalvllv 23
+                    y++vv+a+++ +al+ l+
+      BGC0001720 45 YTEVVAALGIFFALIWLI 62
+                    677888888888777665 PP
+
+  == domain 2  score: -1.7 bits;  conditional E-value: 1.8
+  Plant_vir_prot 14 alglalvllvfl 25
+                     + + +++ + +
+      BGC0001720 78 SILFWVAFGILV 89
+                    333333333222 PP
+
+  == domain 3  score: 10.9 bits;  conditional E-value: 0.0002
+  Plant_vir_prot  12 avalglalvllvfllqkntlpsvGDnihklphGGkYrDGtks 53 
+                     ++ l  +l+ l+++ +++   + GD++h+   G +Yr G+++
+      BGC0001720 128 ILFLASSLIGLLWTRKREPAAHHGDGVHQ---GRWYRRGNRR 166
+                     55677788999*****************6...999**99986 PP
+
+>> ABC2_membrane_5  ABC-2 family transporter protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   5.1   6.6e-05      0.13      95     200 ..      17     136 ..       6     140 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 6.6e-05
+  ABC2_membrane_5  95 litllllii.avlikgn..vtise..vllsiliglvialiflaivlPlyfkfgvekgrivliiiifgiifllvaifsl........skl.elsl 174
+                      ++ ++++ + +++++++  +  +   ++++ +++ + ++++l+ ++P+   f ++ + +vl i++ +++++lv+++ +        +++  ++ 
+       BGC0001720  17 VFAAIVAGVnGEYLRHTrgIHNNRwrFIYTEVVAALGIFFALIWLIPFSSTFTHWPIDFVLSILFWVAFGILVNLVGSscghvfdwNNVhPVHG 110
+                      444444444366666665522222226777777888888889999****************************999987887777766667777 PP
+
+  ABC2_membrane_5 175 idlsnyilliillviillliivSyfi 200
+                       +  +y   i +++++++l+++S +i
+       BGC0001720 111 DQCGKYKATIAFTFLCAILFLASSLI 136
+                      88888888899999999999999877 PP
+
+>> Peptidase_U4  Sporulation factor SpoIIGA
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.8   2.0   0.00011      0.21      19      79 ..      30      87 ..      17     137 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 0.00011
+  Peptidase_U4 19 LlltakllklkikklrlllaAllGalyvvlvlflpklesillsillkilvsllmvliafgp 79
+                  L  t+ + + + + + + + A+lG ++ +l+ ++p ++s ++++++ +++s+l  ++afg+
+    BGC0001720 30 LRHTRGIHNNRWRFIYTEVVAALGIFF-ALIWLIP-FSSTFTHWPIDFVLSILF-WVAFGI 87
+                  555555555555566666677777777.6667888.788*************99.888985 PP
+
+>> MgtE  Divalent cation transporter
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.9   6.8    0.0039       7.7      26     104 ..      34     148 ..      28     151 .. 0.61
+
+  Alignments for each domain:
+  == domain 1  score: 6.9 bits;  conditional E-value: 0.0039
+                 TSS-GGHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHT-.........CTSHHH....................................HHHHHHHHHH CS
+        MgtE  26 gelekklkkvllkelrvvlllgvilgllifllalllgw........slllalv....................................vglalvlvll 80 
+                 + ++++ ++++ +e++++l + + l  li +   +  w        +     +                                     ++a++  +l
+  BGC0001720  34 RGIHNNRWRFIYTEVVAALGIFFALIWLIPFSSTFTHWpidfvlsiL-----FwvafgilvnlvgsscghvfdwnnvhpvhgdqcgkykATIAFT--FL 125
+                 44544467888888888766666655555555455555665544330.....0334555566667777788888888888899999855444444..44 PP
+
+                 HHHHH..HHHHHHHHHHTTS-GGG CS
+        MgtE  81 aaallilgvllplllwklglDPdn 104
+                 +a+l+ l++ l+ llw ++  P+ 
+  BGC0001720 126 CAILF-LASSLIGLLWTRKREPAA 148
+                 44444.34555599*****99986 PP
+
+>> DUF2721  Protein of unknown function (DUF2721)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.0   0.8    0.0026       5.2      74     110 ..      53      89 ..       9      97 .. 0.76
+   2 ?    4.2   0.5     0.019        37      96     118 ..     118     140 ..     114     142 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 7.0 bits;  conditional E-value: 0.0026
+     DUF2721  74 allvvlvvlllflsallsldlsllaailfvlalllll 110
+                 +++++l+ l+ f s ++++ ++++++ilf +a  +l+
+  BGC0001720  53 GIFFALIWLIPFSSTFTHWPIDFVLSILFWVAFGILV 89 
+                 34566666666777777***************99887 PP
+
+  == domain 2  score: 4.2 bits;  conditional E-value: 0.019
+     DUF2721  96 llaailfvlalllllvslllflr 118
+                  ++a++f++a+l+l+ sl+ +l+
+  BGC0001720 118 ATIAFTFLCAILFLASSLIGLLW 140
+                 67889999999999999998876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (169 residues searched)
+Target model(s):                       17929  (3044345 nodes)
+Passed MSV filter:                       618  (0.0344693); expected 358.6 (0.02)
+Passed bias filter:                      299  (0.0166769); expected 358.6 (0.02)
+Passed Vit filter:                        36  (0.00200792); expected 17.9 (0.001)
+Passed Fwd filter:                         9  (0.00050198); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               9  [number of targets reported over threshold]
+# CPU time: 0.50u 2.60s 00:00:03.10 Elapsed: 00:00:02.97
+# Mc/sec: 173.23
+//
+Query:       BGC0001720  [L=541]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    0.00047   19.9  14.2    0.00047   19.9  14.2    5.1  5  Collagen  Collagen triple helix repeat (20 copies)
+
+
+Domain annotation for each model (and alignments):
+>> Collagen  Collagen triple helix repeat (20 copies)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.5   3.5   4.4e-05      0.79      31      50 ..      43      62 ..      37      75 .. 0.49
+   2 ?  -14.2  13.8         1   1.8e+04      37      37 ..     166     166 ..     143     189 .. 0.45
+   3 ?   -5.8   4.5         1   1.8e+04      13      19 ..     218     224 ..     212     239 .. 0.44
+   4 ?    2.0   1.3      0.01   1.8e+02      30      41 ..     312     323 ..     297     340 .. 0.49
+   5 !   19.9  14.2   2.6e-08   0.00047       7      51 ..     349     393 ..     345     401 .. 0.57
+
+  Alignments for each domain:
+  == domain 1  score: 9.5 bits;  conditional E-value: 4.4e-05
+                E-TTSS-------------- CS
+    Collagen 31 GpaGekGppGaaGkpGapGe 50
+                G +G++G +G aG +G +G+
+  BGC0001720 43 GTTGAAGTTGVAGTTGVAGT 62
+                33333333333333333332 PP
+
+  == domain 2  score: -14.2 bits;  conditional E-value: 1
+                 - CS
+    Collagen  37 G 37 
+                 G
+  BGC0001720 166 G 166
+                 1 PP
+
+  == domain 3  score: -5.8 bits;  conditional E-value: 1
+                 XXXXXX- CS
+    Collagen  13 GppGkrG 19 
+                 G  G +G
+  BGC0001720 218 GIVGGTG 224
+                 1111111 PP
+
+  == domain 4  score: 2.0 bits;  conditional E-value: 0.01
+                 EE-TTSS----- CS
+    Collagen  30 kGpaGekGppGa 41 
+                 +G +G +G +G+
+  BGC0001720 312 AGTTGIHGVHGQ 323
+                 233333333322 PP
+
+  == domain 5  score: 19.9 bits;  conditional E-value: 2.6e-08
+                 XXXXXXXXXXXX-----XXXXEEEE-TTSS--------------- CS
+    Collagen   7 GepGppGppGkrGepGeaGekGekGpaGekGppGaaGkpGapGek 51 
+                 G++ ++G +G++G++G +G +G +G++G++G+ G aG+ G+pG++
+  BGC0001720 349 GTHNSHGISGSHGTTGVTGTHGVAGHTGPHGAVGGAGAYGTPGPA 393
+                 444455555555555555555555555555555555555555554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (541 residues searched)
+Target model(s):                       17929  (3044345 nodes)
+Passed MSV filter:                       342  (0.0190752); expected 358.6 (0.02)
+Passed bias filter:                      146  (0.00814323); expected 358.6 (0.02)
+Passed Vit filter:                        19  (0.00105974); expected 17.9 (0.001)
+Passed Fwd filter:                         3  (0.000167327); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.42u 2.64s 00:00:03.06 Elapsed: 00:00:02.91
+# Mc/sec: 565.98
+//
+[ok]
