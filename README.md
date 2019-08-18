@@ -1,4 +1,4 @@
-This repository is a contains the code used in my summer project for the MSc in Bioinformatics at the University Of Glasgow (2018-2019).
+This repository contains the code used in my Summer Project for the MSc in Bioinformatics at the University Of Glasgow (2018-2019).
 It was aimed at predicting structural fingerprints of Gene Clusters' products from genomic data.
 All the code was written on Jupyter Notebook and, also, some data files are provided.
 The "whole pipeline" notebook contains models already trained so the user can load a new Biosynthetic Gene Cluster (BGC) file from MIBiG (https://mibig.secondarymetabolites.org/#!/)
